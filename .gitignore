@@ -1,0 +1,27 @@
+build/
+out/
+
+*.classpath
+*.project
+*.settings
+
+# InteliJ #
+*.iml
+
+# windows images #
+*.db
+
+# node #
+node_modules
+
+# bower #
+bower_components
+
+# Mac #
+.DS_Store
+/target/
+
+.idea/
+
+gradle*
+.gradle*
