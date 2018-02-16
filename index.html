@@ -27,6 +27,7 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/website.css" />
+	<link type="text/css" rel="stylesheet" href="css/googleAutocomplete.css" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,7 +93,7 @@
 							<h1 class="white-text">Join the Vehicle Detailing Revolution</h1>
 							<p class="white-text">Kleancierge is your personal concierge for vehicle cleaning!  Kleancierge provides an easy way for vehicle owners to schedule a cleaning appointment.  Detailers consolidate and manage their appointments, billing and communication on a single platform while acquiring new customers!
 							</p>
-							<a href="/survey/signup">
+							<a href="#" class="sign-up-btn">
 								<button class="white-btn">Sign up to learn more!</button>
 							</a>
 						</div>
@@ -376,7 +377,7 @@
 							</li>
 						</ul>
 						<div class="price-btn">
-							<a href="/survey/signup">
+							<a href="#" class="sign-up-btn">
 								<button class="outline-btn">Sign up to learn more!</button>
 							</a>
 						</div>
@@ -430,15 +431,23 @@
 				<!-- /contact -->
 
 				<!-- contact form -->
-				<!-- <div class="col-md-8 col-md-offset-2">
+				<div class="col-md-8 col-md-offset-2" id="contact-form">
 					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
+						<select class="input" name="type">
+			                <option value="detailer">Detailer</option>
+			                <option value="vehicle_owner">Vehicle Owner</option>
+			            </select>
+						<input type="text" class="input" name="firstName" placeholder="First Name">
+						<input type="text" class="input" name="lastName" placeholder="Last Name">
+						<input type="email" class="input" name="email" placeholder="Email">
+						<input type="tel" class="input" name="mobile" placeholder="Mobile #">
+						<div class="address-row">
+							<input type="text" class="input g-auto-complete-address-control" name="address" placeholder="Address" autocomplete="false">
+	            			<div id="g-auto-complete-address-results"></div>
+	            		</div>
+						<button class="main-btn">Sign Up</button>
 					</form>
-				</div> -->
+				</div>
 				<!-- /contact form -->
 
 			</div>
@@ -516,7 +525,10 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMxgfrCGErCCW0gnonEfUYS84oEeDV0iY&libraries=places"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/survey.js"></script>
+	<script type="text/javascript" src="js/googleAutocomplete.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

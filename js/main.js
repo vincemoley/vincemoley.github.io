@@ -24,6 +24,16 @@
 		}, 600);
 	});
 
+	$(".sign-up-btn").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $("#contact-form").offset().top
+		}, 600, function(){
+			$(".contact-form select:first").focus();
+		});
+	});
+
 	$('#back-to-top').on('click', function(){
 		$('body,html').animate({
 			scrollTop: 0
