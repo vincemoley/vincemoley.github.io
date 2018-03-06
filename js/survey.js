@@ -4,8 +4,16 @@ $(function(){
 
 		var form = $(".contact-form");
 
-		$.post("https://app.kleancierge.com/signup", form.serialize(), function(){
-			$("#contact-form").html("<h4 class='text-center alert alert-success'>Thank you for signing up!<br/><br/>A Kleancierge representative will be in touch</h4>");
+		$.ajax({
+			url: "https://app.kleancierge.com/signup",
+			type: "POST",
+			crossDomain: true,
+			data: form.serialize(),
+			dataType: "json",
+			success: function(resp){
+				$("#contact-form").html("<h4 class='text-center alert alert-success'>Thank you for signing up!<br/><br/>A Kleancierge representative will be in touch</h4>");
+			},
+			error: function(xhr, status){ }
 		});
 	});
 });
