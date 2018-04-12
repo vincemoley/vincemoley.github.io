@@ -4,9 +4,7 @@
     "details": [
       {
         "appID": "4967SP76B7.com.kleancierge.Kleancierge",
-        "paths": [
-          "/", "*"
-        ]
+        "paths": ["*"]
       }
     ]
   }
