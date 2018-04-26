@@ -13,7 +13,9 @@ $(function(){
 			success: function(resp){
 				$("#contact-form").html("<h4 class='text-center alert alert-success'>Thank you for signing up!<br/><br/>A Kleancierge representative will be in touch</h4>");
 			},
-			error: function(xhr, status){ }
+			error: function(xhr, status){
+				alert("Uh oh!  We were unable to save your information.  Please email to vince@kleancierge.com.  Thank you!")
+			}
 		});
 	});
 });
