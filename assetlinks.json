@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android",
+    "package_name": "com.kleancierge",
+    "sha256_cert_fingerprints": ["E2:E9:23:13:1F:B4:B7:FE:6A:A5:77:D6:03:04:85:ED:7F:98:EC:B2:94:32:37:9B:87:53:ED:46:36:32:E8:2F"]
+  }
+}]
