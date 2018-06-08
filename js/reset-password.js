@@ -5,6 +5,10 @@ $(function(){
 		e.preventDefault();
 
 		var form = $("form");
+		var error = $(".general-error");
+
+		error.parent().addClass("hide");
+		error.text("");
 
 		$.ajax({
 			url: "https://app.kleancierge.com/users/password/reset",
@@ -20,8 +24,6 @@ $(function(){
 					$("form").addClass("hide");
 					$(".password-reset").removeClass("hide");
 				} else {
-					var error = $(".general-error");
-
 					for (var fd in errors) {
 			            error.text(errors[fd][0]);
 			        }
