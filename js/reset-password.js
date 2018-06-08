@@ -20,7 +20,11 @@ $(function(){
 					$("form").addClass("hide");
 					$(".password-reset").removeClass("hide");
 				} else {
-					alert(errors);
+					var error = $(".general-error");
+
+					for (var fd in errors) {
+			            error.text(errors[fd][0]);
+			        }
 				}
 			},
 			error: function(xhr, status){
