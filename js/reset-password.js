@@ -25,6 +25,8 @@ $(function(){
 					for (var fd in errors) {
 			            error.text(errors[fd][0]);
 			        }
+
+			        error.parent().removeClass("hide");
 				}
 			},
 			error: function(xhr, status){
