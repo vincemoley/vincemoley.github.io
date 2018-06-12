@@ -21,7 +21,9 @@
 		var hash = this.hash;
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
-		}, 600);
+		}, 600).promise().then(function(){
+			$('#nav').toggleClass('open');
+		});
 	});
 
 	$(".sign-up-btn").on('click', function(e) {
