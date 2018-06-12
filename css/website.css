@@ -1719,3 +1719,7 @@ header {
     transform:scale(0);
   }
 }
+
+input.has-error {
+  border-color: red;
+}
