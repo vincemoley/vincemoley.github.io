@@ -764,7 +764,7 @@ header {
   padding: 40px 20px 40px 40px;
   margin: 15px 0px;
   border: 1px solid #EEE;
-  height: 200px;
+  height: auto;
 }
 
 .service i {
@@ -1610,7 +1610,7 @@ header {
 #back-to-top {
   display:none;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   width: 50px;
   height: 50px;

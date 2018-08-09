@@ -102,4 +102,14 @@
 		}
 	});
 
+	var blinkAbout = function() {
+	    $(".fas.fa-chevron-down:first").fadeOut(1000).fadeIn(1000);
+	}
+
+	var blinkId = setInterval(blinkAbout, 1000);
+
+	$(".fas.fa-chevron-down:first").on("click", function(){
+		clearInterval(blinkId);
+	});
+
 })(jQuery);
