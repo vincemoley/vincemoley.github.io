@@ -876,7 +876,7 @@ header {
 
 .pricing .price-title {
   display: block;
-  padding: 40px 0px 20px;
+  padding: 20px 0px 20px;
   text-transform: uppercase;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
