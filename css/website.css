@@ -1723,3 +1723,11 @@ header {
 input.has-error {
   border-color: red;
 }
+
+.play-store-image {
+  height: 72px
+}
+
+.app-store-image {
+  height: 50px
+}

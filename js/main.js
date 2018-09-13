@@ -111,5 +111,4 @@
 	$(".fas.fa-chevron-down:first").on("click", function(){
 		clearInterval(blinkId);
 	});
-
 })(jQuery);
