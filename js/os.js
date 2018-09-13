@@ -1,9 +1,15 @@
 (function($){
 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
+	var psi = $(".play-store-image");
+	var asi = $(".app-store-image");
+
     if (/android/i.test(userAgent)) {
-        $(".play-store-image").show();
+        psi.show();
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        $(".app-store-image").show();
+        asi.show();
+    } else {
+    	psi.show();
+    	asi.show();
     }
 })(jQuery);
