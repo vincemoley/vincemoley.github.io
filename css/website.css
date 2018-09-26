@@ -80,6 +80,14 @@ h5 {
   font-size: 16px;
 }
 
+p {
+  font-size: 18px;
+}
+
+label {
+  color: black;
+}
+
 a {
   color: #6195FF;
   text-decoration: none;
@@ -880,6 +888,7 @@ header {
   text-transform: uppercase;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+  color: black;
 }
 
 .pricing:hover .price-title {
