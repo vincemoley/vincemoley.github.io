@@ -1740,3 +1740,24 @@ input.has-error {
 .app-store-image {
   height: 50px
 }
+
+.nav-social {
+  margin-top: -15px;
+}
+
+.nav-social a.nav-fb {
+  display: inline-block; 
+  padding-right: 16px;
+}
+
+.nav-social a.nav-fb img {
+  height: 32px
+}
+
+.nav-social a.nav-ig {
+  display: inline-block; 
+}
+
+.nav-social a.nav-ig img {
+  height: 48px
+}
