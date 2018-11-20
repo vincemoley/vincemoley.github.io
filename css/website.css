@@ -643,7 +643,7 @@ header {
   transition: 0.2s color;
 }
 
-.about:hover h3 {
+.about:hover h3, .about:hover h4 {
   color: #fff;
 }
 
@@ -1760,4 +1760,10 @@ input.has-error {
 
 .nav-social a.nav-ig img {
   height: 48px
+}
+
+.fas.fa-sad-tear {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
 }
