@@ -2566,7 +2566,7 @@ body.search-is-visible {
 
 .featured__slide .entry__content {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
   padding: 0 15%;
   z-index: 2;
