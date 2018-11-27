@@ -16,9 +16,11 @@
 
 	///////////////////////////
 	// Smooth scroll
-	$("#nav .main-nav a[href^='#']").on('click', function(e) {
+	$("#nav .main-nav a[href^='#']").on('click', function(e){
 		e.preventDefault();
+
 		var hash = this.hash;
+
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 600).promise().then(function(){
@@ -110,5 +112,15 @@
 
 	$(".fas.fa-chevron-down:first").on("click", function(){
 		clearInterval(blinkId);
+	});
+
+	$(".scroll-link").on("click", function(e){
+		e.preventDefault();
+		
+		var hash = this.hash;
+
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 600);
 	});
 })(jQuery);
