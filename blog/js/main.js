@@ -156,12 +156,6 @@
         });
     };
 
-
-   /* slick slider
-    * ------------------------------------------------------ */
-    
-
-
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var clSmoothScroll = function() {
@@ -198,11 +192,6 @@
         }); 
 
     };
-
-
-   /* Animate On Scroll
-    * ------------------------------------------------------ */
-    
 
 
    /* AjaxChimp
@@ -523,11 +512,9 @@
         clPreloader();
         clPrettyPrint();
         clSearch();
-        
         clMobileMenu();
         clSmoothScroll();
         clAlertBoxes();
-        
         clAjaxChimp();
         clBackToTop();
         clGoogleMap();

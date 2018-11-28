@@ -59,57 +59,15 @@
                 <img src="https://s3.amazonaws.com/kleancierge-static-content/logo.png" alt="Homepage">
             </a>
         </div>
-        <!-- end header__logo -->
-
-        <!--
-        <a class="header__search-trigger" href="#0"></a>
-
-        <div class="header__search">
-
-            <form role="search" method="get" class="header__search-form" action="#">
-                <label>
-                    <span class="hide-content">Search for:</span>
-                    <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
-                </label>
-                <input type="submit" class="search-submit" value="Search">
-            </form>
-
-            <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
-
-        </div>
-        -->
-        <!-- end header__search -->
 
         <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
         <nav class="header__nav-wrap">
 
             <h2 class="header__nav-heading h6">Navigate to</h2>
 
             <ul class="header__nav">
                 <li class="current"><a href="index.html" title="">Home</a></li>
-                <!-- 
-                <li class="has-children">
-                    <a href="#0" title="">Categories</a>
-                    <ul class="sub-menu">
-                        <li><a href="category.html">Lifestyle</a></li>
-                        <li><a href="category.html">Health</a></li>
-                        <li><a href="category.html">Family</a></li>
-                        <li><a href="category.html">Management</a></li>
-                        <li><a href="category.html">Travel</a></li>
-                        <li><a href="category.html">Work</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-children">
-                    <a href="#0" title="">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
-                    </ul>
-                </li>
-                <li><a href="style-guide.html" title="">Styles</a></li>
-                -->
                 <li><a href="page-about.html" title="">About</a></li>
                 <li><a href="page-contact.html" title="">Contact</a></li>
             </ul> <!-- end header__nav -->
@@ -122,135 +80,38 @@
 
     <section class="s-featured" ng-view=""></section>
 
-    <!-- s-content
-    ================================================== -->
-    <section class="s-content">
-        <!--
-        <div class="row entries-wrap wide">
-            <div class="entries">
-
-                <article class="col-block">
-                    
-                    <div class="item-entry" data-aos="zoom-in">
-                        <div class="item-entry__thumb">
-                            <a href="single-standard.html" class="item-entry__thumb-link">
-                                <img src="images/thumbs/post/lamp-400.jpg" 
-                                     srcset="images/thumbs/post/lamp-400.jpg 1x, images/thumbs/post/lamp-800.jpg 2x" alt="">
-                            </a>
-                        </div>
-        
-                        <div class="item-entry__text">    
-                            <div class="item-entry__cat">
-                                <a href="category.html">Design</a> 
-                            </div>
-    
-                            <h1 class="item-entry__title"><a href="single-standard.html">3 Benefits of Minimalism In Interior Design.</a></h1>
-                                
-                            <div class="item-entry__date">
-                                <a href="single-standard.html">June 15, 2018</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </article>
-
-            </div>
-        </div>
-        -->
-
-        <!-- 
-        <div class="row pagination-wrap">
-            <div class="col-full">
-                <nav class="pgn" data-aos="fade-up">
-                    <ul>
-                        <li><a class="pgn__prev" href="#0">Prev</a></li>
-                        <li><a class="pgn__num" href="#0">1</a></li>
-                        <li><span class="pgn__num current">2</span></li>
-                        <li><a class="pgn__num" href="#0">3</a></li>
-                        <li><a class="pgn__num" href="#0">4</a></li>
-                        <li><a class="pgn__num" href="#0">5</a></li>
-                        <li><span class="pgn__num dots">…</span></li>
-                        <li><a class="pgn__num" href="#0">8</a></li>
-                        <li><a class="pgn__next" href="#0">Next</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        -->
-
-    </section>
-
-
     <!-- s-extra
     ================================================== -->
     <section class="s-extra">
 
         <div class="row">
 
-            <div class="col-seven md-six tab-full popular">
+            <div class="col-seven md-six tab-full popular" ng-controller="popularController">
                 <h3>Popular Posts</h3>
 
                 <div class="block-1-2 block-m-full popular__posts">
-                    <article class="col-block popular__post">
-                        <a href="what_the_kleancierge.html" class="popular__thumb">
-                            <img src="images/thumbs/featured/kleancierge_logo_fb.jpg" alt="">
+
+                    <article ng-repeat="article in articles" class="col-block popular__post">
+                        <a href="{{ article.link }}" class="popular__thumb">
+                            <img ng-src="{{ article.image }}" alt="">
                         </a>
-                        <h5>What the Kleancierge</h5>
+                        <h5>{{ article.title }}</h5>
                         <section class="popular__meta">
-                            <span class="popular__author"><span>By</span> <a href="#0">Vince Moley</a></span>
-                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">Nov. 27, 2018</time></span>
+                            <span class="popular__author"><span>By</span> <a href="#0">{{ article.whoPublished }}</a></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">{{ article.datePublished }}</time></span>
                         </section>
                     </article>
 
-                    <article class="col-block popular__post">
-                        <a href="#0" class="popular__thumb">
-                            <img src="images/thumbs/featured/road_salt.jpg" alt="">
-                        </a>
-                        <h5>Salt is for margaritas NOT your vehicle</h5>
-                        <section class="popular__meta">
-                            <span class="popular__author"><span>By</span> <a href="#0">Vince Moley</a></span>
-                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">Nov. 27, 2018</time></span>
-                        </section>
-                    </article>
-
-                    <article class="col-block popular__post">
-                        <a href="#0" class="popular__thumb">
-                            <img src="images/thumbs/featured/fleet.jpg" alt="">
-                        </a>
-                        <h5>My fleet is cleaner than yours</h5>
-                        <section class="popular__meta">
-                            <span class="popular__author"><span>By</span> <a href="#0">Vince Moley</a></span>
-                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">Nov. 27, 2018</time></span>
-                        </section>
-                    </article>
                 </div>
             </div>
 
             <div class="col-four md-six tab-full end">
                 <div class="row">
-                    <!-- 
-                    <div class="col-six md-six mob-full categories">
-                        <h3>Categories</h3>
-        
-                        <ul class="linklist">
-                            <li><a href="#0">Lifestyle</a></li>
-                            <li><a href="#0">Travel</a></li>
-                            <li><a href="#0">Recipes</a></li>
-                            <li><a href="#0">Management</a></li>
-                            <li><a href="#0">Health</a></li>
-                            <li><a href="#0">Creativity</a></li>
-                        </ul>
-                    </div>
-                    -->
                     <div class="col-six md-six mob-full sitelinks">
                         <h3>Site Links</h3>
         
                         <ul class="linklist">
                             <li><a href="#0">Home</a></li>
-                            <!--
-                            <li><a href="#0">Blog</a></li>
-                            <li><a href="#0">Styles</a></li>
-                            -->
                             <li><a href="#0">About</a></li>
                             <li><a href="#0">Contact</a></li>
                             <li><a href="#0">Privacy Policy</a></li>
@@ -297,10 +158,10 @@
                         </form>
                     </div>
 
-                </div> <!-- end s-footer__subscribe -->
+                </div>
 
             </div>
-        </div> <!-- end s-footer__main -->
+        </div>
 
         <div class="s-footer__bottom">
             <div class="row">
@@ -310,22 +171,9 @@
                         <li>
                             <a href="https://www.facebook.com/kleancierge/"><i class="fab fa-facebook"></i></a>
                         </li>
-                        <!--
-                        <li>
-                            <a href="#0"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        -->
                         <li>
                             <a href="https://www.instagram.com/kleancierge/"><i class="fab fa-instagram"></i></a>
                         </li>
-                        <!--
-                        <li>
-                            <a href="#0"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-pinterest"></i></a>
-                        </li>
-                        -->
                     </ul>
                 </div>
 
@@ -358,9 +206,11 @@
 
     <script type="text/javascript" src="angular/app.js"></script>
     <script type="text/javascript" src="angular/route.js"></script>
+    <script type="text/javascript" src="angular/service/featured.js"></script>
+    <script type="text/javascript" src="angular/service/articles.js"></script>
 
     <script type="text/javascript" src="controller/featuredController.js"></script>
-
+    <script type="text/javascript" src="controller/popularController.js"></script>
 </body>
 
 </html>
