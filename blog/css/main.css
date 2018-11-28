@@ -3498,6 +3498,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .entry__media, .entry__post-thumb {
   position: relative;
+  text-align: center;
 }
 
 /* -------------------------------------------------------------------
