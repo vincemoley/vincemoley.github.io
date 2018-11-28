@@ -1,0 +1,5 @@
+npm install http-server -g
+
+cd to directory
+
+from terminal run "http-server"

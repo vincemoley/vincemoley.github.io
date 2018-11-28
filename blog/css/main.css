@@ -4232,4 +4232,8 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   margin-top: 6rem;
 }
 
+.s-featured .row {
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=main.css.map */

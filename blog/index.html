@@ -19,11 +19,17 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/ionicons/dist/css/ionicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css"/>
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -32,7 +38,7 @@
 
 </head>
 
-<body id="top">
+<body id="top" ng-app="Blog">
 
     <!-- preloader
     ================================================== -->
@@ -43,7 +49,6 @@
             <div></div>
         </div>
     </div>
-
 
     <!-- header
     ================================================== -->
@@ -115,102 +120,7 @@
 
     </header> <!-- s-header -->
 
-
-    <!-- featured 
-    ================================================== -->
-    <section class="s-featured">
-        <div class="row">
-            <div class="col-full">
-
-                <div class="featured-slider featured" data-aos="zoom-in">
-
-                    <div class="featured__slide">
-                        <div class="entry">
-
-                            <div class="entry__background" style="background-image:url('images/thumbs/featured/kleancierge_logo_fb.jpg');"></div>
-                            
-                            <div class="entry__content">
-                                <span class="entry__category"><a href="#0">-</a></span>
-
-                                <h1><a href="what_the_kleancierge.html" target="_self" title="What the Kleancierge">What the Kleancierge</a></h1>
-
-                                <div class="entry__info">
-                                    <a href="#0" class="entry__profile-pic">
-                                        <img class="avatar" src="images/avatars/user-01.png" alt="">
-                                    </a>
-                                    <ul class="entry__meta">
-                                        <li><a href="#0">Vince Moley</a></li>
-                                        <li>Nov. 27, 2018</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- end featured__slide -->
-
-                    <div class="featured__slide">
-
-                        <div class="entry">
-
-                            <div class="entry__background" style="background-image:url('images/thumbs/featured/road_salt.jpg');"></div>
-                            
-                            <div class="entry__content">
-                                <span class="entry__category"><a href="#0">Vehicle Maintenance</a></span>
-
-                                <h1><a href="#0" title="">Salt is for margaritas NOT your vehicle</a></h1>
-
-                                <div class="entry__info">
-                                    <a href="#0" class="entry__profile-pic">
-                                        <img class="avatar" src="images/avatars/user-01.png" alt="">
-                                    </a>
-
-                                    <ul class="entry__meta">
-                                        <li><a href="#0">Vince Moley</a></li>
-                                        <li>Nov. 27, 2018</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-
-                    <!-- end featured__slide -->
-                    <div class="featured__slide">
-
-                        <div class="entry">
-
-                            <div class="entry__background" style="background-image:url('images/thumbs/featured/fleet.jpg');"></div>
-
-                            <div class="entry__content">
-                                <span class="entry__category"><a href="#0">Business</a></span>
-
-                                <h1><a href="#0" title="">My fleet is cleaner than yours</a></h1>
-
-                                <div class="entry__info">
-                                    <a href="#0" class="entry__profile-pic">
-                                        <img class="avatar" src="images/avatars/user-01.png" alt="">
-                                    </a>
-
-                                    <ul class="entry__meta">
-                                        <li><a href="#0">Vince Moley</a></li>
-                                        <li>Nov. 27, 2018</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- end featured__slide -->
-                    
-                </div> <!-- end featured -->
-
-            </div> <!-- end col-full -->
-        </div>
-    </section> <!-- end s-featured -->
-
+    <section class="s-featured" ng-view=""></section>
 
     <!-- s-content
     ================================================== -->
@@ -442,9 +352,14 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="angular/app.js"></script>
+    <script type="text/javascript" src="angular/route.js"></script>
+
+    <script type="text/javascript" src="controller/featuredController.js"></script>
 
 </body>
 
