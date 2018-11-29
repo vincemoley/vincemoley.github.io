@@ -2873,7 +2873,7 @@ body.search-is-visible {
 }
 
 .entry__main {
-  margin-top: 6rem;
+  margin-top: 0;
 }
 
 /* -------------------------------------------------------------------
@@ -3492,7 +3492,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
  * ------------------------------------------------------------------- */
 .entry__media {
   padding: 0;
-  margin-bottom: 7.2rem;
+  margin-bottom: 4rem;
 }
 
 .entry__media img {
