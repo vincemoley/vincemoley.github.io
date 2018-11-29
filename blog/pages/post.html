@@ -1,0 +1,94 @@
+<section class="s-content s-content--top-padding s-content--narrow" ng-controller="postController">
+
+    <article class="row entry format-standard">
+
+        <div class="entry__media col-full">
+            <div class="entry__post-thumb">
+                <img ng-src="{{ article.bgImage }}" 
+                     ng-srcset="{{ article.bgImage }} 2000w, 
+                             {{ article.bgImage }} 1000w, 
+                             {{ article.bgImage }} 500w" 
+                     sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+            </div>
+
+            <div class="entry__header col-full">
+	            <h1 class="entry__header-title display-1">{{ article.title }}</h1>
+	            <div class="entry__info">
+		            <a href="#0" class="entry__profile-pic">
+		            	<img class="avatar" ng-src="{{ article.whoImage }}" alt="{{ article.whoPublished }}">
+		            </a>
+		            <ul class="entry__meta">
+		            	<li class="byline">{{ article.whoPublished }}</li>
+		                <li class="date">{{ article.datePublished }}</li>
+		            </ul>
+		        </div>
+	        </div>
+        </div>
+<!--
+        <div class="entry__header col-full">
+            <h1 class="entry__header-title display-1">{{ article.title }}</h1>
+            <ul class="entry__header-meta">
+                <li class="date">{{ article.datePublished }}</li>
+                <li class="byline">
+                    By
+                    <a href="#0">{{ article.whoPublished }}</a>
+                </li>
+            </ul>
+        </div>
+-->
+        <div class="col-full entry__main">
+
+            <p class="lead drop-cap">{{ article.lead }}</p>
+
+			<p>{{ article.content_1 }}</p>
+
+            <p>
+            <img ng-src="{{ article.postImages[0] }}" ng-srcset="{{ article.postImages[0] }} 2000w, {{ article.postImages[0] }} 1000w, {{ article.postImages[0] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+            </p>
+
+            <p>{{ article.content_2 }}</p>
+
+            <blockquote><p>{{ article.contentQuote }}</p></blockquote>
+
+			<p>{{ article.content_3 }}</p>
+
+            <p>
+            <img ng-src="{{ article.postImages[1] }}" ng-srcset="{{ article.postImages[1] }} 2000w, {{ article.postImages[1] }} 1000w, {{ article.postImages[1] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+            </p>
+
+            <p>{{ article.content_4 }}</p>
+
+            <div class="download_schedule">
+            	<h3>DETAILING DELIVERED!</h3>
+            	<h2>Download the app &amp; schedule today!</h2>
+            	<a href="https://play.google.com/store/apps/details?id=com.kleancierge&amp;ah=8ikE0WdMsija03z7fuYSoZOeKHQ&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+					<img class="play-store-image" alt="Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
+				</a>
+				<a href="https://itunes.apple.com/us/app/kleancierge/id1298147570?mt=8">
+					<img class="app-store-image" alt="Apple App Store" src="https://www.kleancierge.com/images/ios-app-store.png">
+				</a>
+            </p>
+        </div>
+
+    </article>
+
+    <div class="s-content__entry-nav">
+        <div class="row s-content__nav">
+            
+            <div ng-show="previousArticle" class="col-six s-content__prev">
+                <a href="#0" rel="prev">
+                    <span>Previous Post</span>
+                    {{ previousArticle.title }}
+                </a>
+            </div>
+            
+            <div ng-show="nextArticle" class="col-six s-content__next">
+                <a href="#0" rel="next">
+                    <span>Next Post</span>
+                    {{ nextArticle.title }}
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>

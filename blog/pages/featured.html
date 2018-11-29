@@ -1,34 +1,36 @@
-<div class="row" ng-controller="featuredController">
-	
-    <div class="col-full">
+<section class="s-featured" ng-controller="featuredController">
+    <div class="row">
+    	
+        <div class="col-full">
 
-        <div class="featured-slider featured" data-aos="zoom-in">
+            <div class="featured-slider featured" data-aos="zoom-in">
 
-            <div ng-repeat="article in articles" class="featured__slide">
-                <div class="entry">
+                <div ng-repeat="article in articles" class="featured__slide">
+                    <div class="entry">
 
-                    <div class="entry__background" style="background-image:url({{ article.image }});"></div>
-                    
-                    <div class="entry__content">
-                        <span class="entry__category"><a href="#0">-</a></span>
+                        <div class="entry__background" style="background-image:url({{ article.bgImage }});"></div>
+                        
+                        <div class="entry__content">
+                            <span class="entry__category"><a href="#0">-</a></span>
 
-                        <h1><a href="what_the_kleancierge.html" target="_self" title="{{ article.title }}">{{ article.title }}</a></h1>
+                            <h1><a ng-href="#/post/{{ article.id }}/view" title="{{ article.title }}">{{ article.title }}</a></h1>
 
-                        <div class="entry__info">
-                            <a href="#0" class="entry__profile-pic">
-                                <img class="avatar" ng-src="{{ article.whoImage }}" alt="{{ article.whoPublished }}">
-                            </a>
-                            <ul class="entry__meta">
-                                <li><a href="#0">{{ article.whoPublished }}</a></li>
-                                <li>{{ article.datePublished }}</li>
-                            </ul>
+                            <div class="entry__info">
+                                <a href="#0" class="entry__profile-pic">
+                                    <img class="avatar" ng-src="{{ article.whoImage }}" alt="{{ article.whoPublished }}">
+                                </a>
+                                <ul class="entry__meta">
+                                    <li><a href="#0">{{ article.whoPublished }}</a></li>
+                                    <li>{{ article.datePublished }}</li>
+                                </ul>
+                            </div>
                         </div>
+                        
                     </div>
-                    
                 </div>
+                
             </div>
-            
-        </div>
 
+        </div>
     </div>
-</div>
+</section>

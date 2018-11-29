@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="node_modules/ionicons/dist/css/ionicons.min.css"/>
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css"/>
 
@@ -27,7 +26,6 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
 
@@ -78,7 +76,7 @@
 
     </header> <!-- s-header -->
 
-    <section class="s-featured" ng-view=""></section>
+    <div ng-view=""></div>
 
     <!-- s-extra
     ================================================== -->
@@ -92,8 +90,8 @@
                 <div class="block-1-2 block-m-full popular__posts">
 
                     <article ng-repeat="article in articles" class="col-block popular__post">
-                        <a href="{{ article.link }}" class="popular__thumb">
-                            <img ng-src="{{ article.image }}" alt="">
+                        <a ng-href="#/post/{{ article.id }}/view" class="popular__thumb">
+                            <img ng-src="{{ article.bgImage }}" alt="">
                         </a>
                         <h5>{{ article.title }}</h5>
                         <section class="popular__meta">
@@ -211,6 +209,7 @@
 
     <script type="text/javascript" src="controller/featuredController.js"></script>
     <script type="text/javascript" src="controller/popularController.js"></script>
+    <script type="text/javascript" src="controller/postController.js"></script>
 </body>
 
 </html>
