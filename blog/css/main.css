@@ -1393,7 +1393,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .display-1 {
   font-family: "Libre Baskerville", serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   line-height: 1.25;
   letter-spacing: -.15rem;
   margin-top: 0;
@@ -2861,11 +2861,14 @@ body.search-is-visible {
 .s-content__main, .entry__main {
   padding-left: 7rem;
   padding-right: 7rem;
+
+  text-align: center;
 }
 
 .s-content__main img, .entry__main img {
-  max-width: 1000px;
   margin: 3rem 0 3rem -7rem;
+
+  max-width: 800px;
 }
 
 .s-content__main p img, .entry__main p img {
@@ -3497,6 +3500,8 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .entry__media img {
   vertical-align: bottom;
+
+  max-width: 50%;
 }
 
 .entry__media, .entry__post-thumb {
@@ -3513,7 +3518,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
   position: absolute;
   top: 0;
-  margin-top: 100px;
+  margin-top: 70px;
   z-index: 1;
 }
 

@@ -8,6 +8,9 @@ app.config(function($routeProvider, $locationProvider){
         .when('/post/:postId/view', {
             templateUrl: 'pages/post.html'
         })
+        .when('/about', {
+            templateUrl: 'pages/about.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
