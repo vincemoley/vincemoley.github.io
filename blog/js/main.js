@@ -175,8 +175,6 @@
                 if ($('body').hasClass('menu-is-open')) {
                     $('.header-menu-toggle').trigger('click');
                 }
-
-                window.location.hash = target;
             });
         });
 
