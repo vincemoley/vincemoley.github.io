@@ -2835,7 +2835,7 @@ body.search-is-visible {
 .s-content {
   background-color: #f2f2f2;
   padding-top: 6rem;
-  padding-bottom: 7.2rem;
+  padding-bottom: 0.5rem;
 }
 
 .s-content--no-padding-bottom {
@@ -4258,6 +4258,8 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .download_schedule {
   text-align: center;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
 }
 
 .download_schedule img {
@@ -4266,6 +4268,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .download_schedule h3, .download_schedule h2 {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .app-store-image {
