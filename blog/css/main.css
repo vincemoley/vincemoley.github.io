@@ -1423,26 +1423,73 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * responsive:
  * reusable and common theme styles
  * ------------------------------------------------------------------- */
+@media only screen and (max-width:1500px) {
+  .display-1 {
+    font-size: 4.5rem;
+
+    margin-left: 180px;
+    margin-right: 180px;
+
+    color: white;
+  }
+}
+
+
 @media only screen and (max-width:1200px) {
   .display-1 {
     font-size: 4.5rem;
-  }
 
+    margin-left: 180px;
+    margin-right: 180px;
+
+    color: white;
+  }
 }
 
 @media only screen and (max-width:1000px) {
   .display-1 {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
+    margin-left: 186px;
+    margin-right: 217px;
+    color: white;
+  }
+
+  .entry__header {
+    margin-top: 10px;
   }
 
 }
 
 @media only screen and (max-width:800px) {
   .display-1 {
-    font-size: 3.6rem;
+    font-size: 3rem;
+    margin-left: 147px;
+    margin-right: 177px;
+    color: white;
   }
 
-  .display-1--with-line-sep::before {
+  .entry__header {
+    margin-top: 10px;
+  }
+
+  .format-standard .entry__info {
+    top: 84px;
+
+    margin-left: 106px;
+    margin-right: 128px;
+  }
+
+  .format-standard .entry__meta {
+    margin: 0 0 0 4rem;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  .format-standard .entry__profile-pic {
+    margin-top: -1.2rem;
+  }
+
+  .format-standard .display-1--with-line-sep::before {
     width: 180px;
   }
 
@@ -1450,27 +1497,89 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width:700px) {
   .display-1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    margin-left: 125px;
+    margin-right: 145px;
+    color: white;
   }
 
+  .format-standard .entry__info {
+    top: 86px;
+
+    margin-left: 106px;
+    margin-right: 128px;
+  }
+
+  .format-standard .entry__meta {
+    margin: 0 0 0 4rem;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  .format-standard .entry__profile-pic {
+    margin-top: -1.2rem;
+  }
 }
 
 @media only screen and (max-width:500px) {
   .display-1 {
-    font-size: 3.3rem;
+    font-size: 2rem;
+
+    margin-left: 86px;
+    margin-right: 106px;
+    color: white;
   }
 
-  .lead.drop-cap:first-letter {
+  .format-standard .lead.drop-cap:first-letter {
     font-size: 7.5rem;
   }
 
+  .format-standard .entry__info {
+    top: 38px;
+
+    margin-left: 85px;
+    margin-right: 106px;
+  }
+
+  .format-standard .entry__meta {
+    margin: 0 0 0 4rem;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  .format-standard .entry__profile-pic {
+    margin-top: -1.2rem;
+  }
 }
 
 @media only screen and (max-width:400px) {
   .display-1 {
-    font-size: 3rem;
+    font-size: 2rem;
+
+    margin-left: 88px;
+    margin-right: 87px;
+    color: white;
   }
 
+  .format-standard .lead.drop-cap:first-letter {
+    font-size: 7.5rem;
+  }
+
+  .format-standard .entry__info {
+    top: 34px;
+    margin-left: 85px;
+    margin-right: 86px;
+  }
+
+  .format-standard .entry__meta {
+    margin: 0 0 0 4rem;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  .format-standard .entry__profile-pic {
+    margin-top: -1.2rem;
+  }
 }
 
 /* ------------------------------------------------------------------- 
@@ -2593,6 +2702,10 @@ body.search-is-visible {
   padding: 0 1.5rem;
 }
 
+.featured__slide .entry__info {
+
+}
+
 .entry__info {
   display: inline-block;
   position: relative;
@@ -3518,14 +3631,11 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
   position: absolute;
   top: 0;
-  margin-top: 70px;
   z-index: 1;
 }
 
 .entry__header-title {
   margin-bottom: .9rem;
-
-  color: white;
 }
 
 .entry__header-meta {
@@ -3849,6 +3959,8 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   .entry__media, .entry__header {
     padding-left: 10px;
     padding-right: 10px;
+
+    margin-top: 10px;
   }
 
   .entry__media {
