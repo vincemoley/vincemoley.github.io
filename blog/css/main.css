@@ -1424,7 +1424,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * reusable and common theme styles
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1500px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 4.5rem;
 
     margin-left: 180px;
@@ -1436,7 +1436,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 @media only screen and (max-width:1200px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 4.5rem;
 
     margin-left: 180px;
@@ -1447,7 +1447,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:1000px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 3.6rem;
     margin-left: 186px;
     margin-right: 217px;
@@ -1461,7 +1461,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:800px) {
-  .display-1 {
+  .format-standard  .display-1 {
     font-size: 3rem;
     margin-left: 147px;
     margin-right: 177px;
@@ -1473,15 +1473,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__info {
-    top: 84px;
-
     margin-left: 106px;
     margin-right: 128px;
   }
 
   .format-standard .entry__meta {
-    margin: 0 0 0 4rem;
-    color: black;
+    margin: 0 0 0 4.5rem;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1.4rem;
   }
 
@@ -1496,7 +1494,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:700px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 2rem;
     margin-left: 125px;
     margin-right: 145px;
@@ -1504,15 +1502,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__info {
-    top: 86px;
-
     margin-left: 106px;
     margin-right: 128px;
   }
 
   .format-standard .entry__meta {
-    margin: 0 0 0 4rem;
-    color: black;
+    margin: 0 0 0 4.5rem;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1.4rem;
   }
 
@@ -1522,7 +1518,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:500px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 2rem;
 
     margin-left: 86px;
@@ -1535,7 +1531,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__info {
-    top: 38px;
+    top: 60px;
 
     margin-left: 85px;
     margin-right: 106px;
@@ -1553,7 +1549,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:400px) {
-  .display-1 {
+  .format-standard .display-1 {
     font-size: 2rem;
 
     margin-left: 88px;
@@ -1566,7 +1562,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__info {
-    top: 34px;
+    top: 112px;
     margin-left: 85px;
     margin-right: 86px;
   }
