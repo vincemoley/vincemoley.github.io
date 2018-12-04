@@ -20,7 +20,7 @@ app.service('articles', function(){
         title: "Salt is for margaritas NOT your vehicle",
     	whoPublished: "Vince Moley",
     	whoImage: "images/avatars/user-01.png",
-    	datePublished: "Nov. 27, 2018",
+    	datePublished: "Dec. 1, 2018",
     	bgImage: "images/thumbs/featured/road_salt.jpg",
         lead: "Tis the season!  Not for family gatherings and gift giving, but for snowy weather in the northern half of the United States and Canada!  Along with the snowy weather comes the life saving treatment, of our roads and bridges, in the form of salt!  Yes, salt which usually rims our favorite tequila drink, is now scattered along roadways to help make snowy roads passable.",
         content_1: "Nowadays, a new kid is on the block, when it comes to road deicing and his name is magnesium chloride.  Not familiar with this new band member?  Well you better be, b/c he's not only more efficient at deicing our roads, but he's also horrible for our vehicles.  Magesium chloride is significantly worse than traditional rock salt (sodium chloride), which has been used to cover our roads for decades.",
@@ -31,14 +31,18 @@ app.service('articles', function(){
         postImages: ["images/thumbs/post/salt_covered.JPG", "images/thumbs/post/rusted_car.JPG"]
     },
     {  id: 3,
-        title: "My fleet is cleaner than yours",
+        title: "Employees with Benefits",
     	whoPublished: "Vince Moley",
     	whoImage: "images/avatars/user-01.png",
-    	datePublished: "Nov. 27, 2018",
-    	bgImage: "images/thumbs/featured/fleet.jpg",
-        lead: "",
-        content: "",
-        postImages: []
+    	datePublished: "Dec. 4, 2018",
+    	bgImage: "images/thumbs/featured/happy_employees.jpg",
+        lead: "So a woman walks into her cubicle; stop me if you've heard this one before; sits down at her desk, coffee in hand, fires up her computer, opens her email and sees the congratulatory notification that she's the top salesperson of the month.... and that's it.",
+        content_1: "I hope this is not your organization, but many exist that provide no incentive when staff hits agreed upon goals.  I have a dog and when I don't give him his treat after doing something I've asked, he's not happy.  Unfortunately, this is how A LOT of employers treat their employees.  Don't get me wrong, a pat on the back and/or congratulatory handshake is a must in my personal opinion.  However, what's the point of setting goals, if there isn't some type of prize when you achieve them?",
+        content_2: "Nevertheless, there's a movement among HR, managers and company principles to show appreciation throughout the year, when goals are achieved and when milestones are arrived.  These folks are playing the long game.  They know how tough it is to find honest, hardworking and reliable employees.  They know how much time and effort they've put into their staff AND vice versa for the staff to the company.  They want to not only retain their staff, but they want them to be happy, motivated, challenged and feel appreciated!",
+        content_3: "What are these forward-thinking companies doing to show their appreciation?  They ARE NOT waiting until the end of each fiscal year...  They're planning!  Where do we want our business to go and how do we get it there?  Once internal goals are set they break them down into achievable pieces and allocate them, throughout the year, to the appropriate personnel and departments.  They know that the year long goals seems much more achievable and less overwhelming, if they're smaller, consumable chunks.  Furthermore, they're adding incentives to the \"pot\".  Company lunches, gift cards, bonuses, tickets and concierge services are some of the incentives provided when goals are met.",
+        content_4: "An important part of incentivizing is giving employees options.  After speaking with an employer, with such a program, employees of 5-10 years often exhaust the options... They can only get some many accessories for their work truck.  However, one benefit that never gets old is coming to work in a dirty vehicle and leaving in a clean one!  If you don't have a smile on your face when you get into your brand new looking and smelling vehicle, you probably need your pulse checked.  At Kleancierge, we specialize in putting a smile on each vehicle owner's face that use our service.  Does your company provide incentives, but would like to see Kleancierge as an option?  Are you a decision maker, looking to show your appreciation throughout the year?  Are an HR person looking for a way to differentiate your business from others?  Kleancierge can help put a smile on any employees face while they're still at the office or shop!  I'm sure you've heard happy wife, happy life.  Though this is true I also think a happy employees, successful business.",
+        contentQuote: "They know how tough it is to find honest, hardworking and reliable employees",
+        postImages: ["images/thumbs/post/happy_employees_1.jpg", "images/thumbs/post/happy_employees_2.jpeg"]
     }];
 
     this.retrieveById = function(id){

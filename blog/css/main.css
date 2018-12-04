@@ -1419,6 +1419,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   transform: translate3d(-50%, 0, 0);
 }
 
+.format-standard .display-1 {
+  color: white;
+  -webkit-text-stroke: .3px black;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * reusable and common theme styles
@@ -1429,8 +1434,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     margin-left: 180px;
     margin-right: 180px;
-
-    color: white;
   }
 }
 
@@ -1441,8 +1444,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     margin-left: 180px;
     margin-right: 180px;
-
-    color: white;
   }
 }
 
@@ -1451,7 +1452,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 3.6rem;
     margin-left: 186px;
     margin-right: 217px;
-    color: white;
   }
 
   .entry__header {
@@ -1465,7 +1465,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 3rem;
     margin-left: 147px;
     margin-right: 177px;
-    color: white;
   }
 
   .entry__header {
@@ -1498,7 +1497,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 2rem;
     margin-left: 125px;
     margin-right: 145px;
-    color: white;
   }
 
   .format-standard .entry__info {
@@ -1523,7 +1521,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     margin-left: 86px;
     margin-right: 106px;
-    color: white;
   }
 
   .format-standard .lead.drop-cap:first-letter {
@@ -1554,7 +1551,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     margin-left: 88px;
     margin-right: 87px;
-    color: white;
   }
 
   .format-standard .lead.drop-cap:first-letter {
