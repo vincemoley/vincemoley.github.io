@@ -1767,3 +1767,7 @@ input.has-error {
   position: relative;
   top: 2px;
 }
+
+input[type="email"] {
+  width: 75%
+}
