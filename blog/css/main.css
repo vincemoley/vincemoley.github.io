@@ -1479,6 +1479,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   .format-standard .entry__meta {
     margin: 0 0 0 4.5rem;
     color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: .3px black;
     font-size: 1.4rem;
   }
 
@@ -1506,7 +1507,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   .format-standard .entry__meta {
     margin: 0 0 0 4.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    
     font-size: 1.4rem;
   }
 
@@ -1535,13 +1536,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__meta {
-    margin: 0 0 0 4rem;
-    color: black;
+    margin: 0 0 0 0;
     font-size: 1.4rem;
   }
 
   .format-standard .entry__profile-pic {
-    margin-top: -1.2rem;
+    display: none;
   }
 }
 
@@ -1558,19 +1558,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   .format-standard .entry__info {
-    top: 112px;
+    top: 30px;
     margin-left: 85px;
     margin-right: 86px;
   }
 
   .format-standard .entry__meta {
-    margin: 0 0 0 4rem;
-    color: black;
+    margin: 0 0 0 0;
     font-size: 1.4rem;
   }
 
   .format-standard .entry__profile-pic {
-    margin-top: -1.2rem;
+    display: none;
   }
 }
 
