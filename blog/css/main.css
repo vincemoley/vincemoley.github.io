@@ -76,7 +76,7 @@ html, body {
 }
 
 body {
-  background: #111860;
+  background: #50b3e1;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -3248,7 +3248,7 @@ footer {
   padding-bottom: 10.2rem;
   font-size: 1.5rem;
   line-height: 2;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
 }
 
 footer a {
