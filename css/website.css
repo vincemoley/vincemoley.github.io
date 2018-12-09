@@ -245,10 +245,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .navbar-brand {
   padding: 0;
+  height: 60px;
+  margin-left: 4px;
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-  max-height: 50px;
+  max-height: 58px;
   display: block;
 }
 
@@ -569,7 +571,7 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1744,11 +1746,11 @@ input.has-error {
 }
 
 .play-store-image {
-  height: 72px
+  height: 144px
 }
 
 .app-store-image {
-  height: 50px
+  height: 100px
 }
 
 .nav-social a.nav-fb {
@@ -1776,4 +1778,47 @@ input.has-error {
 
 input[type="email"] {
   width: 75%
+}
+
+.header-title {
+    text-align: center;
+    background-color: white;
+}
+
+.header-title h3 {
+    margin-top: 18px;
+}
+
+.btn-types {
+  position: absolute;
+
+  width: 622px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.btn-types .btn {
+  font-size: 20pt;
+  width: 300px;
+}
+
+.btn-types .btn-primary {
+  background-color: #2a90c0;
+}
+
+@media only screen and (max-width:767px) {
+  .btn-types {
+    width: 300px;
+  }
+
+  .btn-types .btn {
+    border-radius: 6px !important;
+  }
+
+  .btn-types .btn-group > .btn:first-child{
+    margin-bottom: 10px;
+  }
 }
