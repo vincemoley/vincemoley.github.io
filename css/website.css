@@ -5,7 +5,7 @@ Author: yaminncco
 Colors:
 	Body 		  : #868F9B
 	Headers 	: #10161A
-	Primary 	: #6195FF
+	Primary 	: #2a90c0
 	Dark      : #FCFCFF
 	Grey 		  : #F4F4F4 #FAFAFA #EEE
 
@@ -81,7 +81,9 @@ h5 {
 }
 
 p {
+  color: black;
   font-size: 18px;
+  text-align: left;
 }
 
 label {
@@ -89,7 +91,7 @@ label {
 }
 
 a {
-  color: #6195FF;
+  color: #2a90c0;
   text-decoration: none;
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
@@ -99,11 +101,11 @@ a:hover, a:focus {
   text-decoration: none;
   outline: none;
   opacity: 0.8;
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .main-color {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .white-text {
@@ -111,12 +113,12 @@ a:hover, a:focus {
 }
 
 ::-moz-selection {
-  background-color: #6195FF;
+  background-color: #2a90c0;
   color: #FFF;
 }
 
 ::selection {
-  background-color: #6195FF;
+  background-color: #2a90c0;
   color: #FFF;
 }
 
@@ -172,7 +174,7 @@ ul, ol {
   display:block;
   height:4px;
   width:40px;
-  background-color: #6195FF;
+  background-color: #2a90c0;
   margin-top: 20px;
 }
 
@@ -202,7 +204,7 @@ textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
-  border-color: #6195FF;
+  border-color: #2a90c0;
   opacity: 1;
 }
 
@@ -219,7 +221,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .main-btn {
-  background: #6195FF;
+  background: #2a90c0;
   color: #FFF;
 }
 
@@ -230,8 +232,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .outline-btn {
   background: transparent;
-  color: #6195FF !important;
-  border-color: #6195FF;
+  color: #2a90c0 !important;
+  border-color: #2a90c0;
 }
 
 .main-btn:hover, .white-btn:hover, .outline-btn:hover {
@@ -328,12 +330,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   }
   .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
     background: transparent;
-    color: #6195FF;
+    color: #2a90c0;
   }
   .main-nav>li>a:after {
     content: "";
     display: block;
-    background-color: #6195FF;
+    background-color: #2a90c0;
     height: 2px;
     width: 0%;
     -webkit-transition: 0.2s width;
@@ -362,7 +364,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: absolute;
     right: -50%;
     top: 0;
-    background-color: #6195FF;
+    background-color: #2a90c0;
     width: 200px;
     -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
     box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
@@ -450,10 +452,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     transition: 0.2s all;
   }
   .main-nav>li.active {
-    border-left: 6px solid #6195FF;
+    border-left: 6px solid #2a90c0;
   }
   .main-nav li a:hover, .main-nav li a:focus {
-    background-color: #6195FF;
+    background-color: #2a90c0;
     color: #FFF;
     opacity: 1;
   }
@@ -614,12 +616,12 @@ header {
   text-align: center;
   padding: 40px 20px;
   border: 1px solid #EEE;
-  margin: 15px 0px;
+  margin: 0px 0px;
 }
 
 .about i {
   font-size: 36px;
-  color: #6195FF;
+  color: #2a90c0;
   margin-bottom: 20px;
 }
 
@@ -643,10 +645,20 @@ header {
 .about h3 {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+  color: #2a90c0;
 }
 
-.about:hover h3, .about:hover h4 {
+.about:hover h3 {
+ color: #2a90c0; 
+}
+
+.about:hover h4, .about:hover p {
   color: #fff;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -723,7 +735,7 @@ header {
   -ms-transform: translateY(100%);
   transform: translateY(100%);
   opacity: 0;
-  color: #6195FF;
+  color: #2a90c0;
   margin-bottom: 5px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -752,7 +764,7 @@ header {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: #6195FF;
+  background-color: #2a90c0;
   color: #FFF;
   line-height: 50px;
   text-align: center;
@@ -782,7 +794,7 @@ header {
   left: 20px;
   text-align: center;
   font-size: 32px;
-  color: #6195FF;
+  color: #2a90c0;
   border-radius: 50%;
 }
 
@@ -823,8 +835,8 @@ header {
   float: left;
   padding: 5px;
   border-radius: 50%;
-  color: #6195FF;
-  border: 1px solid #6195FF;
+  color: #2a90c0;
+  border: 1px solid #2a90c0;
   margin-right: 5px;
 }
 
@@ -838,7 +850,7 @@ header {
 }
 
 .number i {
-  color: #6195FF;
+  color: #2a90c0;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -894,7 +906,7 @@ header {
 }
 
 .pricing:hover .price-title {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .pricing .price {
@@ -905,7 +917,7 @@ header {
   text-align: center;
   margin: auto;
   border-radius: 50%;
-  border: 2px solid #6195FF;
+  border: 2px solid #2a90c0;
 }
 
 .pricing .price h3 {
@@ -975,7 +987,7 @@ header {
 
 .testimonial span {
   font-size: 14px;
-  color: #6195FF;
+  color: #2a90c0;
   text-transform: uppercase;
 }
 
@@ -1058,7 +1070,7 @@ header {
 }
 
 .team:hover .team-content span {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .team .team-social {
@@ -1075,7 +1087,7 @@ header {
   line-height: 50px;
   width: 50px;
   text-align: center;
-  background-color: #6195FF;
+  background-color: #2a90c0;
   color: #FFF;
 }
 
@@ -1109,7 +1121,7 @@ header {
 }
 
 .blog .blog-meta li i {
-  color: #6195FF;
+  color: #2a90c0;
   margin-right: 5px;
 }
 
@@ -1147,12 +1159,12 @@ header {
 
 .blog-tags a:hover {
   color: #FFF;
-  background-color: #6195FF;
+  background-color: #2a90c0;
 }
 
 .blog-tags a i {
   margin-right: 3px;
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .blog-tags a:hover i {
@@ -1200,7 +1212,7 @@ header {
   border-radius: 3px;
   margin-left: 5px;
   color: #FFF;
-  background-color: #6195FF;
+  background-color: #2a90c0;
 }
 
 /* -- blog comments -- */
@@ -1253,11 +1265,11 @@ header {
 
 .blog-comments .media.author {
   background-color: #F4F4F4;
-  border-color: #6195FF;
-  border-bottom: 1px solid #6195FF;
+  border-color: #2a90c0;
+  border-bottom: 1px solid #2a90c0;
 }
 .blog-comments .media.author>.media-body>.media-heading {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .blog-comments .media.author + .media {
@@ -1315,7 +1327,7 @@ header {
   border: none;
   line-height: 40px;
   background-color: transparent;
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 /* -- category sidebar -- */
@@ -1334,11 +1346,11 @@ header {
 
 .widget-category a span {
   float: right;
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .widget-category a:hover {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 /* -- tags sidebar -- */
@@ -1354,7 +1366,7 @@ header {
 
 .widget-tags a:hover {
   color: #FFF;
-  background-color: #6195FF;
+  background-color: #2a90c0;
 }
 
 /* -- posts sidebar -- */
@@ -1377,7 +1389,7 @@ header {
 }
 
 .widget-post a:hover {
-  color: #6195FF;
+  color: #2a90c0;
 }
 
 .widget-post .blog-meta {
@@ -1387,12 +1399,12 @@ header {
 .widget-post .blog-meta li {
   display: inline-block;
   margin-right: 5px;
-  color: #6195FF;
+  color: #2a90c0;
   font-size: 12px;
 }
 
 .widget-post li i {
-  color: #6195FF;
+  color: #2a90c0;
   margin-right: 5px;
 }
 
@@ -1409,7 +1421,7 @@ header {
 
 .contact i {
   font-size: 36px;
-  color: #6195FF;
+  color: #2a90c0;
   margin-bottom: 20px;
 }
 
@@ -1420,6 +1432,10 @@ header {
 
 .contact-form .input {
   margin-bottom: 20px;
+}
+
+.contact p {
+  text-align: center;
 }
 
 /*------------------------------------*\
@@ -1457,7 +1473,7 @@ header {
   line-height: 50px;
   text-align: center;
   border-radius: 3px;
-  background-color: #6195FF;
+  background-color: #2a90c0;
   color:#FFF;
 }
 
@@ -1575,10 +1591,10 @@ header {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #6195FF;
+  background: #2a90c0;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-  background: #6195FF;
+  background: #2a90c0;
   width:20px;
 }
 
@@ -1600,7 +1616,7 @@ header {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #6195FF;
+  background: #2a90c0;
   color: #FFF;
   padding: 0px;
   width: 50px;
@@ -1620,7 +1636,7 @@ header {
 
 .owl-theme .owl-nav [class*='owl-']:hover {
   opacity: 0.8;
-  background: #6195FF;
+  background: #2a90c0;
 }
 
 
@@ -1637,7 +1653,7 @@ header {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #6195FF;
+  background: #2a90c0;
   border-radius:3px;
   color: #FFF;
   z-index: 9999;
@@ -1680,7 +1696,7 @@ header {
 }
 .preloader span {
   display: inline-block;
-  background-color: #6195FF;
+  background-color: #2a90c0;
   width: 25px;
   height: 25px;
   -webkit-animation: 1s preload ease-in-out infinite;
@@ -1807,6 +1823,7 @@ input[type="email"] {
 
 .btn-types .btn-primary {
   background-color: #2a90c0;
+  border-color: white;
 }
 
 @media only screen and (max-width:767px) {
@@ -1821,4 +1838,57 @@ input[type="email"] {
   .btn-types .btn-group > .btn:first-child{
     margin-bottom: 10px;
   }
+}
+
+#signup {
+  background-color: #2a90c0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 4px 4px;
 }
