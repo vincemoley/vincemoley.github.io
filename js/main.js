@@ -69,15 +69,8 @@
 	});
 
 	///////////////////////////
-	// magnificPopup
-	$('.work').magnificPopup({
-		delegate: '.lightbox',
-		type: 'image'
-	});
-
-	///////////////////////////
 	// Owl Carousel
-	$('.owl-carousel.owl-theme').owlCarousel({
+	$('#before-photos').owlCarousel({
 		items:1,
 		loop:true,
 		margin:15,
@@ -85,33 +78,48 @@
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
 		autoplay : true,
-		animateOut: 'fadeOut'
+		animateOut: 'fadeOut',
+		responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        600:{
+	            items:1,
+	            nav:true
+	        },
+	        1000:{
+	            items:1,
+	            nav:true
+	        }
+	    }
 	});
 
-	$('#testimonial-slider').owlCarousel({
+	$('#after-photos').owlCarousel({
+		items:1,
 		loop:true,
 		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
-		nav: false,
 		autoplay : true,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:2
-			}
-		}
-	});
-
-	var blinkAbout = function() {
-	    $(".fas.fa-chevron-down:first").fadeOut(1000).fadeIn(1000);
-	}
-
-	var blinkId = setInterval(blinkAbout, 1000);
-
-	$(".fas.fa-chevron-down:first").on("click", function(){
-		clearInterval(blinkId);
+		animateOut: 'fadeOut',
+		responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        600:{
+	            items:1,
+	            nav:true
+	        },
+	        1000:{
+	            items:1,
+	            nav:true
+	        }
+	    }
 	});
 
 	$(".scroll-link").on("click", function(e){
@@ -122,5 +130,22 @@
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 600);
+	});
+
+	$(".btn-types .btn").on("click", function(e){
+		var btn = $(this);
+
+		if(!btn.hasClass("btn-primary")){
+			$(".btn-types .btn").removeClass("btn-primary").addClass("btn-default");
+			btn.removeClass("btn-default").addClass("btn-primary");
+
+			if(btn.hasClass("vo-btn")){
+				$(".vehicle-owner-section").removeClass("hide");
+				$(".detailer-section").addClass("hide");
+			} else {
+				$(".detailer-section").removeClass("hide");
+				$(".vehicle-owner-section").addClass("hide");
+			}
+		}
 	});
 })(jQuery);
