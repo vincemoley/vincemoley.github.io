@@ -125,7 +125,8 @@ a:hover, a:focus {
 ul, ol {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
+  color: black;
 }
 
 /* -- section  -- */
@@ -583,8 +584,17 @@ header {
 .home-content h1 {
   text-transform: uppercase;
 }
+
 .home-content button {
   margin-top: 20px;
+}
+
+.home-content .play-store-image {
+  height: 144px
+}
+
+.home-content .app-store-image {
+  height: 100px
 }
 
 .header-wrapper h2 {
@@ -652,13 +662,21 @@ header {
  color: #2a90c0; 
 }
 
-.about:hover h4, .about:hover p {
+.about:hover h4, .about:hover p, .about:hover ul, .about:hover ol {
   color: #fff;
 }
 
 #about img {
   max-width: 100%;
   height: auto;
+}
+
+#about img.play-store-image {
+  height: 72px;
+}
+
+#about img.app-store-image {
+  height: 50px;
 }
 
 
@@ -1759,14 +1777,6 @@ header {
 
 input.has-error {
   border-color: red;
-}
-
-.play-store-image {
-  height: 144px
-}
-
-.app-store-image {
-  height: 100px
 }
 
 .nav-social a.nav-fb {
