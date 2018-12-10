@@ -77,7 +77,7 @@
 
 	///////////////////////////
 	// Owl Carousel
-	$('#about-slider').owlCarousel({
+	$('.owl-carousel.owl-theme').owlCarousel({
 		items:1,
 		loop:true,
 		margin:15,
