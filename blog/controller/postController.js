@@ -1,4 +1,4 @@
-app.controller('postController', function($rootScope, $scope, $routeParams, articles) {
+app.controller('postController', function($rootScope, $scope, $routeParams, articles, $sce) {
 	var id = parseInt($routeParams.postId);
 
 	$scope.article = articles.retrieveById(id);

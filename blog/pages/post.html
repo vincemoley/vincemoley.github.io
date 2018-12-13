@@ -27,25 +27,32 @@
 
         <div class="col-full entry__main">
 
-            <p class="lead drop-cap">{{ article.lead }}</p>
+            <p class="lead drop-cap" ng-bind-html="article.lead"></p>
 
-			<p>{{ article.content_1 }}</p>
+			<p ng-bind-html="article.content_1"></p>
 
             <p>
             <img ng-src="{{ article.postImages[0] }}" ng-srcset="{{ article.postImages[0] }} 2000w, {{ article.postImages[0] }} 1000w, {{ article.postImages[0] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
             </p>
 
-            <p>{{ article.content_2 }}</p>
+            <p ng-bind-html="article.content_2"></p>
 
-            <blockquote><p>{{ article.contentQuote }}</p></blockquote>
+            <blockquote><p ng-bind-html="article.contentQuote"></p></blockquote>
 
-			<p>{{ article.content_3 }}</p>
+			<p ng-bind-html="article.content_3"></p>
 
             <p>
             <img ng-src="{{ article.postImages[1] }}" ng-srcset="{{ article.postImages[1] }} 2000w, {{ article.postImages[1] }} 1000w, {{ article.postImages[1] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
             </p>
 
-            <p>{{ article.content_4 }}</p>
+            <p ng-bind-html="article.content_4"></p>
+
+            <div ng-show="article.links.length > 0">
+                <h5>Want to learn more?</h5>
+                <ul>
+                    <li ng-repeat="link in article.links"><p><a target="_blank" href="{{ link.url }}">{{ link.label }}</a></p></li>
+                </ul>
+            </div>
 
             <div class="download_schedule">
             	<h3>DETAILING DELIVERED!</h3>

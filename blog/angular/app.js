@@ -1,1 +1,1 @@
-var app = angular.module('Blog', ['ngRoute']);
+var app = angular.module('Blog', ['ngRoute', 'ngSanitize']);

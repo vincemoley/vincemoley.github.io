@@ -1424,6 +1424,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-text-stroke: .3px black;
 }
 
+.format-standard ul li {
+  text-align: left;
+}
+
+.format-standard ul li p {
+  margin-bottom: 1rem;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * reusable and common theme styles
