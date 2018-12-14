@@ -1779,16 +1779,16 @@ input.has-error {
   border-color: red;
 }
 
-.nav-social a.nav-fb {
+.nav-social a.nav-fb, .nav-social a.nav-ig {
   display: inline-block; 
   padding-right: 16px;
 }
 
-.nav-social a.nav-fb img {
+.nav-social a.nav-fb img, .nav-social a.nav-li img {
   height: 32px
 }
 
-.nav-social a.nav-ig {
+.nav-social a.nav-ig, .nav-social a.nav-li {
   display: inline-block; 
 }
 
