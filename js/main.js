@@ -72,7 +72,6 @@
 	// Owl Carousel
 	$('#before-photos').owlCarousel({
 		items:1,
-		singleItem:true,
 		loop:true,
 		nav: true,
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
