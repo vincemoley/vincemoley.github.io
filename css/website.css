@@ -567,14 +567,14 @@ header {
 }
 
 #home {
-  height: 100vh;
+  height: 110vh;
 }
 
 #home .home-wrapper {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 350px;
+  top: 360px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
