@@ -72,8 +72,8 @@
 	// Owl Carousel
 	$('#before-photos').owlCarousel({
 		items:1,
+		singleItem:true,
 		loop:true,
-		margin:15,
 		nav: true,
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
@@ -96,31 +96,32 @@
 	    }
 	});
 
-	$('#after-photos').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
-		nav: true,
-		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		dots : true,
-		autoplay : true,
-		animateOut: 'fadeOut',
-		responsiveClass:true,
-	    responsive:{
-	        0:{
-	            items:1,
-	            nav:true
-	        },
-	        600:{
-	            items:1,
-	            nav:true
-	        },
-	        1000:{
-	            items:1,
-	            nav:true
-	        }
-	    }
-	});
+	setTimeout(function(){
+		$('#after-photos').owlCarousel({
+			items:1,
+			loop:true,
+			nav: true,
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			dots : true,
+			autoplay : true,
+			animateOut: 'fadeOut',
+			responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        600:{
+		            items:1,
+		            nav:true
+		        },
+		        1000:{
+		            items:1,
+		            nav:true
+		        }
+		    }
+		});
+	}, 250);
 
 	$(".scroll-link").on("click", function(e){
 		e.preventDefault();
