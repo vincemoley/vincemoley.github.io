@@ -1,1 +1,3 @@
 Sitemap: https://www.kleancierge.com/sitemap.xml
+User-agent: * 
+Disallow: 
