@@ -70,13 +70,14 @@
 
 	///////////////////////////
 	// Owl Carousel
-	$('#before-photos').owlCarousel({
-		items:1,
-		loop:true,
+	$('#customer-reviews').owlCarousel({
+		items: 2,
+		margin: 20,
+		loop: true,
 		nav: true,
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
-		autoplay : true,
+		autoplay : false,
 		animateOut: 'fadeOut',
 		responsiveClass:true,
 	    responsive:{
@@ -89,7 +90,7 @@
 	            nav:true
 	        },
 	        1000:{
-	            items:1,
+	            items:2,
 	            nav:true
 	        }
 	    }
@@ -97,6 +98,33 @@
 
 	setTimeout(function(){
 		$('#after-photos').owlCarousel({
+			items:1,
+			loop:true,
+			nav: true,
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			dots : true,
+			autoplay : true,
+			animateOut: 'fadeOut',
+			responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        600:{
+		            items:1,
+		            nav:true
+		        },
+		        1000:{
+		            items:1,
+		            nav:true
+		        }
+		    }
+		});
+	}, 100);
+
+	setTimeout(function(){
+		$('#before-photos').owlCarousel({
 			items:1,
 			loop:true,
 			nav: true,
