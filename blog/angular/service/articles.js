@@ -1,7 +1,7 @@
 app.service('articles', function(){
 	var articles = [
     { id: 1,
-        title: "What the Kleancierge",
+        title: "What The Kleancierge",
     	whoPublished: "Vince Moley",
     	whoImage: "images/avatars/user-01.png",
     	datePublished: "Nov. 27, 2018",
@@ -18,7 +18,7 @@ app.service('articles', function(){
         links: []
     },
     {  id: 2,
-        title: "Salt is for margaritas NOT your vehicle",
+        title: "Salt Is For Margaritas NOT Your Vehicle",
     	whoPublished: "Vince Moley",
     	whoImage: "images/avatars/user-01.png",
     	datePublished: "Dec. 1, 2018",
@@ -46,7 +46,7 @@ app.service('articles', function(){
         ]
     },
     {  id: 3,
-        title: "Employees with Benefits",
+        title: "Employees With Benefits",
     	whoPublished: "Vince Moley",
     	whoImage: "images/avatars/user-01.png",
     	datePublished: "Dec. 4, 2018",
@@ -62,8 +62,55 @@ app.service('articles', function(){
             label: "Rethink Employee Rewards to Attract, Retain Top Talent",
             url: "https://deloitte.wsj.com/cmo/2018/07/26/rethink-employee-rewards-to-attract-retain-top-talent/"
         }]
-    }];
+    },
+    {  id: 4,
+        title: "Progress Over Perfection In The New Year",
+        whoPublished: "Vince Moley",
+        whoImage: "images/avatars/user-01.png",
+        datePublished: "Jan. 1, 2019",
+        bgImage: "images/thumbs/featured/progress_perf.jpg",
+        lead: "Progress over perfection.  That's one of my favorite mottos and something I like to keep in mind when putting together my yearly goals.  These goals help to give purpose and direction to the new calendar year while requiring reflection points along the way to evaluate progress and realign expectations.  With that being said, I've provided 5 goals (+1 bonus) for every vehicle owner for 2019.  This isn't your typical list, though it does have one, that can help you better maintain your vehicle and sanity during the trials and tribulations during the year of the pig, oink oink.",
+        content_1: "<h3>1. Invest in floor liners for your vehicle</h3>Nothing is sexier that a set of rubber, fitted floor liners...  Let me rephrase that...  Nothing is more functional than a set of rubber, fitted floor liners!  Good floor liners have raised edges and ridges that give direction and space for liquids sticking to your footwear and allows said liquid to migrate to built-in reserviors for easy(er) clean up.  I recommend <a href=\"https://www.weathertech.com/floorliner-digitalfit/\">WeatherTech's</a> laser fitted, floor liners for many reasons, that I'll get into in a future post.",
+        content_2: "<h3>2. Remove bird droppings & spills immediately</h3>Sigh, this one I had to learn the hard way after getting my new vehicle detailed for the first time.  During the appointment my detailer asked for me to look at something with him.  It was a speckled, gray area on my blue exterior (photo).  I remembered the area immediately, because a pile of bird sh*t was laying there for a couple days as I waited for it to rain.  My laziness caused the bird droppings to etch the clear coat of my paint, which could not be fixed during my appointment.  Learn from my mistake and hose off any bird droppings ASAP and add some elbow grease, if needed.  The same idea can be applied to interior spills.  When remedied as soon as possible these marks can be made temporary.  When left untreated they can become permanant or expensive to get rid of.  Moral of the story?  Be proactive and you'll save yourself money and heartache.",
+        content_3: "<h3>3. Be prepared for emergencies, big or small</h3>I always have a handful of items stored in my vehicle.  These are earth shattering items, but they really come in handy when the situation calls.  For me these items are; jumper cables, a rain-resistent jacket, a warm jacket, a hat, an umbrella, a roll of quarters, aspirin, napkins and snacks, in case my fiance is hangry...  As you can tell I don't have children, but if you do, you know what's needed to short-circuit a break down...  Make sure you have it.\r<h3>4.  Detail your vehicle (at least) twice a year</h3>Living in the northeast we get distinct weather changes between Spring, Summer, Fall & Winter.  Each season effects our vehicles in different ways.  I prefer to get a VIP detail, twice a year, before and after Winter.  Before Winter is to remove all debris from the interior & exterior and most importantly treat the exterior paint and wheels with a wax and sealant, respectively, to protect them from road salts (reference <a target=\"_blank\" href=\"http://127.0.0.1:8080/blog/#/post/2/view\">Salt Is For Margaritas NOT Your Vehicle</a>).  After Winter, to remove the salt build up, remove and replace the wax and sealant and get an evaluation on the current state of my interior and exterior from my detailer.  Vehicles are an expensive part of adulthood and we hope to maximize our vehicle's mileage, while maintaining it's aesthetics.  Keeping the interior and exterior in good condition is imperative.  Finally, I work really hard, rarely have free time, spend a good amount of time in my vehicle and care about my appearance.  In my mind, there's not many things better than my vehicle looking and smelling brand new without me having to lift a finger.",
+        content_4: "<h3>5. Follow regular maintenance</h3>This is something preached by Mom & Dad, Grandma & Grandpa and your mechanic alike.  However, today we have this handy gadget called a cell phone that's more closely related to a computer than traditional phone.  A key feature of most smart phones is an integrated calendar.  Life is busy, but when you schedule events you can be reminded (multiple times) and NOT double book.  Do yourself a favor in the new year and set a calendar reminder for the following three things related to your vehicle: Oil Change - every 3 months.  State Inspection - 30 days before it expires.  Full Detail Appointment - every March 1st & November 1st.  Take the guesswork and surprise out of the equation for these three items and reap the long-term benefits.\r<h3>Bonus - Take a different route to work once a week</h3>This is something I've done for the past three years and I love doing it...  I'm the creative type that loves trying different things.  Variety is the spice of life and though taking a different route to work doesn't sound very sexy, it's requires you to either a.) plan ahead on which route you're going to take or b.) \"play it by ear\" and figure it out when you get in the car that morning.  Either way you'll see different sights, activate your brain on an otherwise mundane drive and give yourself a few extra minutes of NPR or Howard Stern.",
+        contentQuote: "Either way you'll see different sights, activate your brain on an otherwise mundane drive and give yourself a few extra minutes of NPR or Howard Stern.",
+        postImages: ["images/thumbs/post/bird_poop.png", "images/thumbs/post/my_floor_mat.jpg"],
+        links: [{
+            label: "WeatherTech DigitalFit Floor Liners",
+            url: "https://www.weathertech.com/floorliner-digitalfit/"
+        },
+        {
+            label: "How To Schedule iPhone Reminders",
+            url: "https://theappfactor.com/create-recurring-reminders-iphone-ipad/"
+        },
+        {
+            label: "How To Schedule Android Reminders",
+            url: "https://support.google.com/calendar/answer/6285327"
+        }]
+    }
+    ];
 
+/*
+    {  id: XXXXXXX,
+        title: "",
+        whoPublished: "Vince Moley",
+        whoImage: "images/avatars/user-01.png",
+        datePublished: "Jan. 1, 2019",
+        bgImage: "",
+        lead: "",
+        content_1: "",
+        content_2: "",
+        content_3: "",
+        content_4: "",
+        contentQuote: "",
+        postImages: ["", ""],
+        links: [{
+            label: "",
+            url: ""
+        }]
+    }
+*/
     this.retrieveById = function(id){
         for(var idx in articles){
             var article = articles[idx];
