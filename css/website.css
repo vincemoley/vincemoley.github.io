@@ -1678,6 +1678,7 @@ header {
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
   cursor: pointer;
+  border: 1px solid white;
 }
 
 #back-to-top:after {
@@ -1854,5 +1855,21 @@ input[type="email"] {
   background-color: #2a90c0;
 }
 
+.col-md-6.height-fix {
+  min-height: 454px;
+}
 
+/*
+.row.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*/
 
