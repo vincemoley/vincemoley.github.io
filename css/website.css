@@ -350,9 +350,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: relative;
   }
   .has-dropdown>a:before {
-    font-family: 'FontAwesome';
+    font-family: "Font Awesome 5 Free Solid", "Font Awesome 5 Free" !important;
+    font-weight: 900;
     content: "\f054";
-    font-size: 6px;
+    font-size: 12px;
     margin-left: 6px;
     float: right;
     -webkit-transform: rotate(90deg);
