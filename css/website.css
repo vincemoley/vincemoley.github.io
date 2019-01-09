@@ -463,7 +463,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   }
   .has-dropdown>a:after {
     content: "\f054";
-    font-family: 'FontAwesome';
+    font-family: "Font Awesome 5 Free Solid", "Font Awesome 5 Free" !important;
+    font-weight: 900;
     float: right;
     -webkit-transition: 0.2s -webkit-transform;
     transition: 0.2s -webkit-transform;
@@ -575,7 +576,7 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 320px;
+  top: 50vh;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1784,6 +1785,7 @@ input.has-error {
 .nav-social a.nav-fb, .nav-social a.nav-ig {
   display: inline-block; 
   padding-right: 16px;
+  padding-top: 0px;
 }
 
 .nav-social a.nav-fb img, .nav-social a.nav-li img {
@@ -1858,6 +1860,10 @@ input[type="email"] {
 
 .col-md-6.height-fix {
   min-height: 454px;
+}
+
+.service-area-color {
+  color: orange;
 }
 
 /*
