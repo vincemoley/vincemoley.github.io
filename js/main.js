@@ -16,13 +16,11 @@
 
 	///////////////////////////
 	// Smooth scroll
-	$("#nav .main-nav a[href^='#']").on('click', function(e){
+	$("#nav .main-nav :not(.has-dropdown) a[href^='#']").on('click', function(e){
 		e.preventDefault();
 
-		var hash = this.hash;
-
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top
+			scrollTop: $(this).offset().top
 		}, 600).promise().then(function(){
 			$('#nav').toggleClass('open');
 		});
