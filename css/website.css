@@ -301,6 +301,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   padding: 0px 0px;
   background-color: #FFF !important;
   border-bottom: 1px solid #EEE;
@@ -572,6 +573,10 @@ header {
   height: 120vh;
 }
 
+#home.questions {
+  height: inherit;
+}
+
 #home .home-wrapper {
   position: absolute;
   left: 0px;
@@ -679,6 +684,13 @@ header {
 
 #about img.app-store-image {
   height: 50px;
+}
+
+/*------------------------------------*\
+  Questions
+\*------------------------------------*/
+#questions {
+  margin-top: 5vh;
 }
 
 
@@ -1866,17 +1878,15 @@ input[type="email"] {
   color: orange;
 }
 
-/*
-.row.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+.panel-footer {
+  min-height: 54px;
 }
-.row.row-eq-height > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-*/
 
+.nanobar {
+   top: 32px;
+   z-index: 1;
+}
+
+.has-error label, .has-error small {
+  color: red;
+}
