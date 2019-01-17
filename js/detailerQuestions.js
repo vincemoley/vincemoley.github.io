@@ -31,7 +31,11 @@ $(function(){
 			if(resp.errors){
 				handleErrors(fields, resp.errors);
 
-				form.find(".form-group.has-error").first().find("input, select, textarea").first().focus();
+				var firstError = form.find(".form-group.has-error").first().find("input, select, textarea").first();
+
+				firstError.focus();
+
+				$('body,html').animate({scrollTop: firstError}, 600);
 			} else {
 				step += tick;
 				retrieve();
@@ -77,7 +81,7 @@ $(function(){
 			name = name.replace('step_' + step + '_', '');
 
 			var field = fields.filter("input[name='" + name + "'], select[name='" + name + "'], textarea[name='" + name + "']");
-			var parent = field.parent();
+			var parent = field.closest(".form-group");
 
 			if(!parent.hasClass("has-error")){
 				parent.addClass("has-error").append("<small>" + error + "</small>");
@@ -132,7 +136,7 @@ $(function(){
 	$(".form-group").find("input, select, textarea").on("blur", function(){
 		var ele = $(this);
 
-		if(ele.val()) ele.parent().removeClass("has-error");
+		if(ele.val()) ele.closest(".form-group").removeClass("has-error");
 	});
 
 	retrieve();
