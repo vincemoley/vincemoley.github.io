@@ -286,6 +286,28 @@
 							    <input type="number" class="form-control input-lg" name="addCustomerCapacity" id="addCustomerCapacity" placeholder="">
 							</div>
 							<!-- step 3 -->
+							<!-- step 4 -->
+							<div class="form-group step-4 template-package">
+								<input type="hidden" id="packages">
+								<div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<label class="package"></label>
+											<input type="hidden" name="packages[0].cleaningPackage" id="packages[0].cleaningPackage" value="">
+										</div>
+										<div class="panel-body">
+											<ol class="services"></ol>
+										</div>
+										<div class="panel-footer">
+											<div class="input-group">
+												<span class="input-group-addon">$</span>
+								    			<input type="decimal" class="form-control input-lg" name="packages[0].price" id="packages[0].price" placeholder="0.00">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- step 4 -->
 						</form>
 					</div>
 					<div class="panel-footer">

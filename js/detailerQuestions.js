@@ -19,7 +19,15 @@ $(function(){
 		send(url + step, 'GET', null, function(resp){
 			$("#questions .panel-title").text(resp.data.title);
 
-			populateExisting(form, resp.data);
+			if(resp.data.packagesUrl){
+				send(rootUrl + resp.data.packagesUrl, 'GET', null, function(packagesResp){
+					populatePackages(packagesResp.data);
+
+					populateExisting(form, resp.data);
+				});
+			} else {
+				populateExisting(form, resp.data);
+			}
 		});
 	};
 
@@ -75,6 +83,16 @@ $(function(){
 					populateValue(fields, name + "\\[" + idx + "\\]\\.start", startTime);
 					populateValue(fields, name + "\\[" + idx + "\\]\\.end", endTime);
 				}
+			} else if(name === "packages") {
+				for(var idx in value){
+					var package = value[idx];
+
+					populateValue(fields, name + "\\[" + idx + "\\]\\.cleaningPackage", package.cleaningPackage.value);
+					
+					if(package.price){
+						populateValue(fields, name + "\\[" + idx + "\\]\\.price", package.price);
+					}
+				}
 			} else if(value){
 				populateValue(fields, name, value);
 			}
@@ -125,6 +143,43 @@ $(function(){
 
 		if(step === 2){
 			$("#serviceType").change();
+		}
+	};
+
+	var populatePackages = function(packages){
+		var packageTemplate = $(".template-package");
+		var parent = packageTemplate.parent();
+
+		packageTemplate.detach().removeClass("template-package");
+
+		for(var idx in packages){
+			var package = packages[idx];
+			var clone = packageTemplate.clone();
+			var packNameId = "packages[" + idx + "].cleaningPackage";
+			var priceNameId = "packages[" + idx + "].price";
+			var services = clone.find(".services");
+
+			clone.find("#packages\\[0\\]\\.cleaningPackage")
+				.attr("id", packNameId)
+				.attr("name", packNameId);
+
+			if(package.motorcycle){
+				clone.find(".package:first").text("Motorycle - " + package.label);
+			} else {
+				clone.find(".package:first").text(package.label);
+			}
+
+			clone.find("#packages\\[0\\]\\.price")
+				.attr("id", priceNameId)
+				.attr("name", priceNameId);
+
+			for(var srvcIdx in package.services){
+				var service = package.services[srvcIdx];
+				
+				services.append("<li>" + service.description + "</li>");
+			}
+
+			parent.append(clone);
 		}
 	};
 
