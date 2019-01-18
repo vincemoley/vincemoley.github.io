@@ -27,8 +27,8 @@ $(function(){
 		var form = $("#question-form");
 		var fields =  form.find(".form-group:not(.hide)").find("input, select, textarea");
 
-		send(url + step, 'POST', form.serialize(), function(resp){
-			if(resp.errors){
+		send(url + step, 'POST', fields.serialize(), function(resp){
+			if(resp.errors && tick > 0){
 				handleErrors(fields, resp.errors);
 
 				var firstError = form.find(".form-group.has-error").first().find("input, select, textarea").first();
@@ -60,17 +60,32 @@ $(function(){
 		});
 	};
 
-	var populateExisting = function(form, data){
+	var populateExisting = function(fields, data){
 		for(var name in data){
 			var value = data[name];
 
 			name = name.replace('step_' + step + '_', '');
 
-			var field = form.find("input[name='" + name + "'], select[name='" + name + "']");
+			if(name === "businessHours"){
+				for(var idx in value){
+					var businessHour = value[idx];
+					var startTime = ((businessHour.start.hour < 10) ?  "0" + businessHour.start.hour : businessHour.start.hour) + ":" + ((businessHour.start.minute < 10) ? businessHour.start.minute + "0" : businessHour.start.minute);
+					var endTime = ((businessHour.end.hour < 10) ? "0" + businessHour.end.hour : businessHour.end.hour) + ":" + ((businessHour.end.minute < 10) ? businessHour.end.minute + "0" : businessHour.end.minute);
 
-			if(field.length === 1){
-				field.val(value);
+					populateValue(fields, name + "\\[" + idx + "\\]\\.start", startTime);
+					populateValue(fields, name + "\\[" + idx + "\\]\\.end", endTime);
+				}
+			} else {
+				populateValue(fields, name, value);
 			}
+		}
+	};
+
+	var populateValue = function(fields, id, value){
+		var field = fields.find("#" + id);
+
+		if(field.length === 1){
+			field.val(value);
 		}
 	};
 

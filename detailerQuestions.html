@@ -213,6 +213,86 @@
 							    </select>
 							</div>
 							<!-- step 2 -->
+
+							<!-- step 3 -->
+							<div class="form-group step-3">
+								<label for="travelRequirement">Business Hours</label>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[0].dayOfWeek" value="Monday">
+							    	<span class="input-group-addon day-of-week">Monday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[0].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[0].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[1].dayOfWeek" value="Tuesday">
+							    	<span class="input-group-addon day-of-week">Tuesday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[1].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[1].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[2].dayOfWeek" value="Wednesday">
+							    	<span class="input-group-addon day-of-week">Wednesday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[2].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[2].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[3].dayOfWeek" value="Thursday">
+							    	<span class="input-group-addon day-of-week">Thursday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[3].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[3].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[4].dayOfWeek" value="Friday">
+							    	<span class="input-group-addon day-of-week">Friday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[4].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[4].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[5].dayOfWeek" value="Saturday">
+							    	<span class="input-group-addon day-of-week">Saturday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[5].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[5].end">
+							    </div>
+							    <div class="input-group">
+							    	<input type="hidden" name="businessHours.dayOfWeek" id="businessHours[6].dayOfWeek" value="Sunday">
+							    	<span class="input-group-addon day-of-week">Sunday</span>
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.start" id="businessHours[6].start">
+							    	<input type="time" class="inline-form-control input-lg" name="businessHours.end" id="businessHours[6].end">
+							    </div>
+							</div>
+							<div class="form-group step-3">
+							    <label for="salesTax">Sales Tax</label>
+							    <input type="text" class="form-control input-lg" name="salesTax" id="salesTax" placeholder="Pa Sales Tax">
+							</div>
+							<div class="form-group step-3">
+							    <label for="salesTaxPercent">Sales Tax %</label>
+							    <input type="number" class="form-control input-lg" name="salesTaxPercent" id="salesTaxPercent" placeholder="">
+							</div>
+							<div class="form-group step-3">
+							    <label for="apptReqProcedure">Appointment Request Procedure</label>
+							    <textarea class="form-control input-lg" name="apptReqProcedure" id="apptReqProcedure" placeholder="We strive to respond within 3 hours of the appointment request"></textarea>
+							</div>
+							<div class="form-group step-3">
+							    <label for="insurance">Insurance</label>
+							    <select class="form-control input-lg" name="insurance" id="insurance">
+							    	<option></option>
+							    	<option value="true">Yes</option>
+							    	<option value="false">No</option>
+							    </select>
+							</div>
+							<div class="form-group step-3">
+							    <label for="certsTraining">Certificates / Training</label>
+							    <textarea type="text" class="form-control input-lg" name="certsTraining" id="certsTraining" placeholder="IDA Certified"></textarea>
+							</div>
+							<div class="form-group step-3">
+							    <label for="currentCustomers">Current # of Customers</label>
+							    <input type="number" class="form-control input-lg" name="currentCustomers" id="currentCustomers" placeholder="">
+							</div>
+							<div class="form-group step-3">
+							    <label for="addCustomerCapacity">Additional Customer Capacity</label>
+							    <input type="number" class="form-control input-lg" name="addCustomerCapacity" id="addCustomerCapacity" placeholder="">
+							</div>
+							<!-- step 3 -->
 						</form>
 					</div>
 					<div class="panel-footer">

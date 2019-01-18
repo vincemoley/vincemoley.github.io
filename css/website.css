@@ -1890,3 +1890,14 @@ input[type="email"] {
 .has-error label, .has-error small {
   color: red;
 }
+
+.form-group.step-3 input[type='time']{
+    margin: 0px 2px;
+    width: 48%;
+    padding: 0
+}
+
+.input-group-addon.day-of-week {
+  min-width: 104px;
+  text-align: left;
+}
