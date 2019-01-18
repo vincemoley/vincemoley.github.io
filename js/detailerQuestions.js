@@ -75,7 +75,7 @@ $(function(){
 					populateValue(fields, name + "\\[" + idx + "\\]\\.start", startTime);
 					populateValue(fields, name + "\\[" + idx + "\\]\\.end", endTime);
 				}
-			} else {
+			} else if(value){
 				populateValue(fields, name, value);
 			}
 		}
@@ -84,9 +84,7 @@ $(function(){
 	var populateValue = function(fields, id, value){
 		var field = fields.find("#" + id);
 
-		if(field.length === 1){
-			field.val(value);
-		}
+		field.val(value+""); // add +"" for booleans since jquery compares to the option's value, which is a string
 	};
 
 	var handleErrors = function(fields, errors){
@@ -95,7 +93,7 @@ $(function(){
 
 			name = name.replace('step_' + step + '_', '');
 
-			var field = fields.filter("input[name='" + name + "'], select[name='" + name + "'], textarea[name='" + name + "']");
+			var field = fields.filter("input[name='" + name + "'], select[name='" + name + "'], textarea[name='" + name + "'], #" + name);
 			var parent = field.closest(".form-group");
 
 			if(!parent.hasClass("has-error")){
