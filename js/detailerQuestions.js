@@ -3,6 +3,7 @@ $(function(){
 	var rootUrl = "http://localhost:8080";
 	var url = rootUrl + "/vetting/step/";
 	var step = parseInt(window.location.hash.substr(1)) || 1;
+	var finalStep = 6;
 
 	var nanobar = new Nanobar({ 
 		id: "progress-bar",
@@ -19,6 +20,10 @@ $(function(){
 		send(url + step, 'GET', null, function(resp){
 			$("#questions .panel-title").text(resp.data.title);
 
+			if(!resp.data.session){
+				form.find(".form-group.session-lost").removeClass("hide");
+			}
+
 			if(resp.data.packagesUrl){
 				send(rootUrl + resp.data.packagesUrl, 'GET', null, function(packagesResp){
 					populatePackages(packagesResp.data);
@@ -27,6 +32,10 @@ $(function(){
 				});
 			} else {
 				populateExisting(form, resp.data);
+			}
+
+			if(step === 2){
+				$("#serviceType").change();
 			}
 		});
 	};
@@ -52,20 +61,22 @@ $(function(){
 	};
 
 	var send = function(url, action, data, callback){
-		$.ajax({
-			url: url,
-			type: action,
-			xhrFields: {
-		       withCredentials: true
-		    },
-			crossDomain: true,
-			data: data,
-			dataType: "json",
-			success: callback,
-			error: function(xhr, status){
-				alert("Uh oh!  We were unable to process your information.  Please email to vince@kleancierge.com, if the problem persists.  Thank you!")
-			}
-		});
+		if(step <= finalStep){
+			$.ajax({
+				url: url,
+				type: action,
+				xhrFields: {
+			       withCredentials: true
+			    },
+				crossDomain: true,
+				data: data,
+				dataType: "json",
+				success: callback,
+				error: function(xhr, status){
+					alert("Uh oh!  We were unable to process your information.  Please email to vince@kleancierge.com, if the problem persists.  Thank you!")
+				}
+			});
+		}
 	};
 
 	var populateExisting = function(fields, data){
@@ -126,12 +137,12 @@ $(function(){
 		if(step <= 1){
 			$(".question-prev").hide();
 			$(".question-next").show();
-		} else if(step >= 7){
-			$(".question-prev").show();
-			$(".question-next").hide();
-		} else {
+		} else if(step < finalStep){
 			$(".question-prev").show();
 			$(".question-next").show();
+		} else if(step > finalStep){
+			$(".question-prev").hide();
+			$(".question-next").hide();
 		}
 
 		nanobar.go((step / 7) * 100);
@@ -140,10 +151,6 @@ $(function(){
 		form.find(".form-group.step-" + step).removeClass("hide");
 
 		form.find(".form-group:not(.hide):first").find("input, select, textarea").first().focus();
-
-		if(step === 2){
-			$("#serviceType").change();
-		}
 	};
 
 	var populatePackages = function(packages){

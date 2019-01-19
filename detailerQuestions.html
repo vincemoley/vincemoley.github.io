@@ -123,7 +123,7 @@
 					<div class="panel-body">
 						<form id="question-form">
 							<!-- step 1 -->
-							<div class="form-group step-1">
+							<div class="form-group step-1 session-lost">
 							    <label for="businessName">Business Name</label>
 							    <input type="text" class="form-control input-lg" name="businessName" id="businessName" placeholder="">
 							</div>
@@ -263,7 +263,7 @@
 							</div>
 							<div class="form-group step-3">
 							    <label for="apptReqProcedure">Appointment Request Procedure</label>
-							    <textarea class="form-control input-lg" name="apptReqProcedure" id="apptReqProcedure" placeholder="We strive to respond within 3 hours of the appointment request"></textarea>
+							    <textarea class="form-control input-lg" name="apptReqProcedure" id="apptReqProcedure" placeholder="Example: We strive to respond within 3 hours of the appointment request"></textarea>
 							</div>
 							<div class="form-group step-3">
 							    <label for="insurance">Insurance</label>
@@ -275,7 +275,7 @@
 							</div>
 							<div class="form-group step-3">
 							    <label for="certsTraining">Certificates / Training</label>
-							    <textarea type="text" class="form-control input-lg" name="certsTraining" id="certsTraining" placeholder="IDA Certified"></textarea>
+							    <textarea type="text" class="form-control input-lg" name="certsTraining" id="certsTraining" placeholder="Example: IDA Certified"></textarea>
 							</div>
 							<div class="form-group step-3">
 							    <label for="currentCustomers">Current # of Customers</label>
@@ -322,11 +322,20 @@
 							    <textarea type="number" rows="12" class="form-control input-lg" name="interiorDescription" id="interiorDescription"></textarea>
 							</div>
 							<!-- step 6 -->
+							<!-- confirmation -->
+							<div class="form-group step-7 panel panel-success">
+								<div class="alert alert-success">
+								<h4>Questions Complete!</h4>
+								<h4>Thank you!</h4>
+								<p>A representative from Kleancierge will be in touch once your questions have been reviewed.</p>
+								</div>
+							</div>
+							<!-- confirmation -->
 						</form>
 					</div>
 					<div class="panel-footer">
-						<span class="btn btn-default question-prev">Previous</span>
-						<span class="btn btn-success question-next pull-right">Next</span>
+						<span class="btn btn-default question-prev pull-left"><< Prev</span>
+						<span class="btn btn-success question-next pull-right">Next >></span>
 					</div>
 				</div>
 				<!-- form -->
