@@ -20,7 +20,7 @@ $(function(){
 		send(url + step, 'GET', null, function(resp){
 			$("#questions .panel-title").text(resp.data.title);
 
-			if(!resp.data.session){
+			if(!resp.data.session && step > 1){
 				showLostSession(form);
 			}
 
