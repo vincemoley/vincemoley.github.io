@@ -21,7 +21,7 @@ $(function(){
 			$("#questions .panel-title").text(resp.data.title);
 
 			if(!resp.data.session){
-				form.find(".form-group.session-lost").removeClass("hide");
+				showLostSession(form);
 			}
 
 			if(resp.data.packagesUrl){
@@ -34,9 +34,7 @@ $(function(){
 				populateExisting(form, resp.data);
 			}
 
-			if(step === 2){
-				$("#serviceType").change();
-			}
+			fireSelectChange(form);
 		});
 	};
 
@@ -52,7 +50,7 @@ $(function(){
 
 				firstError.focus();
 
-				$('body,html').animate({scrollTop: firstError}, 600);
+				$('body,html').animate({scrollTop: firstError}, 0);
 			} else {
 				step += tick;
 				retrieve();
@@ -116,11 +114,27 @@ $(function(){
 		field.val(value+""); // add +"" for booleans since jquery compares to the option's value, which is a string
 	};
 
+	/**
+	* fire change event for any visible selects in case there's a change event related to it
+	*/
+	var fireSelectChange = function(fields){
+		var selects = fields.find("select");
+
+		selects.each(function(idx, ele){
+			var select = $(ele);
+			if(!select.closest(".form-group").hasClass("hide")){
+				select.change();
+			}
+		});
+	};
+
 	var handleErrors = function(fields, errors){
 		for(var name in errors){
 			var error = errors[name][0];
 
 			name = name.replace('step_' + step + '_', '');
+
+			if(name.includes("businessName")) name = name.replace('step_1_', '');
 
 			var field = fields.filter("input[name='" + name + "'], select[name='" + name + "'], textarea[name='" + name + "'], #" + name);
 			var parent = field.closest(".form-group");
@@ -128,11 +142,14 @@ $(function(){
 			if(!parent.hasClass("has-error")){
 				parent.addClass("has-error").append("<small>" + error + "</small>");
 			}
+			if(parent.hasClass("hide")){
+				packages.removeClass("hide");
+			}
 		}
 	};
 
 	var updateUI = function(form){
-		$('body,html').animate({scrollTop: 0}, 600);
+		$('body,html').animate({scrollTop: 0}, 0);
 
 		if(step <= 1){
 			$(".question-prev").hide();
@@ -152,6 +169,17 @@ $(function(){
 
 		form.find(".form-group:not(.hide):first").find("input, select, textarea").first().focus();
 	};
+
+	var showLostSession = function(form){
+		var field = form.find(".form-group.session-lost").removeClass("hide");
+				
+		if($("#sesssion-lost-msg").length === 0){
+			field.find("label:first")
+				.after("<div id=\"sesssion-lost-msg\"><small>Session Lost - Please re-enter</small></div>");
+		}
+
+		field.find("input:first").focus();
+	}
 
 	var populatePackages = function(packages){
 		var packageTemplate = $(".template-package");
