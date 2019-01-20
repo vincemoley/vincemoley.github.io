@@ -122,6 +122,7 @@ $(function(){
 
 		selects.each(function(idx, ele){
 			var select = $(ele);
+			
 			if(!select.closest(".form-group").hasClass("hide")){
 				select.change();
 			}
