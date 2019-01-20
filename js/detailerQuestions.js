@@ -1,6 +1,6 @@
 $(function(){
-	//var rootUrl = "https://app.kleancierge.com";
-	var rootUrl = "http://localhost:8080";
+	var rootUrl = "https://app.kleancierge.com";
+	//var rootUrl = "http://localhost:8080";
 	var url = rootUrl + "/vetting/step/";
 	var step = parseInt(window.location.hash.substr(1)) || 1;
 	var finalStep = 6;
