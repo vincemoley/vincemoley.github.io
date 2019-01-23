@@ -1,5 +1,5 @@
 .bg-img {
-  background-image: url('https://s3.amazonaws.com/kleancierge-static-content/background.jpg');
+  background-image: url('../images/background.jpg');
   position: absolute;
   left: 0;
   top: 0;
