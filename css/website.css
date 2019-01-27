@@ -1900,4 +1900,18 @@ input[type="email"] {
 .input-group-addon.day-of-week {
   min-width: 104px;
   text-align: left;
+  position: relative;
 }
+
+.input-group-addon.day-of-week .text-danger.fas.fa-minus-circle,
+.input-group-addon.day-of-week .text-danger.fas.fa-plus-circle {
+    font-size: 16pt;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+input[disabled] {
+  background-color: lightgray;
+}
+

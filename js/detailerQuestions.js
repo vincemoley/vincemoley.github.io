@@ -243,5 +243,21 @@ $(function(){
 		if(ele.val()) ele.closest(".form-group").removeClass("has-error");
 	});
 
+	$(".input-group-addon.day-of-week").on("click", function(){
+		var dayOfWeek = $(this);
+		var icon = dayOfWeek.find("i.text-danger")
+		var inputGroup = icon.closest(".input-group");
+
+		if(icon.hasClass("fa-plus-circle")){
+			icon.removeClass("fa-plus-circle").addClass("fa-minus-circle");
+			inputGroup.find(".inline-form-control").prop("disabled", "");
+			inputGroup.find("input[name$='off']").val("false");
+		} else if(icon.hasClass("fa-minus-circle")){
+			icon.removeClass("fa-minus-circle").addClass("fa-plus-circle");
+			inputGroup.find(".inline-form-control").prop("disabled", "disabled");
+			inputGroup.find("input[name$='off']").val("true");
+		}
+	});
+
 	retrieve();
 });
