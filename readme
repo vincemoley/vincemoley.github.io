@@ -3,3 +3,8 @@ npm install http-server -g
 cd to directory
 
 from terminal run "http-server"
+
+Converts images to Webp format
+
+1. cd into directory using terminal
+2. cwebp -q 80 image.png -o image.webp
