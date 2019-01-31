@@ -6,5 +6,6 @@ from terminal run "http-server"
 
 Converts images to Webp format
 
-1. cd into directory using terminal
-2. cwebp -q 80 image.png -o image.webp
+1. brew install webp
+2. cd into directory using terminal
+3. cwebp -q 80 image.png -o image.webp
