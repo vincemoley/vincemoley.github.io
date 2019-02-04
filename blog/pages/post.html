@@ -71,14 +71,14 @@
         <div class="row s-content__nav">
             
             <div ng-show="previousArticle" class="col-six s-content__prev">
-                <a href="#0" rel="prev">
+                <a ng-href="#/post/{{ previousArticle.id }}/view" rel="prev">
                     <span>Previous Post</span>
                     {{ previousArticle.title }}
                 </a>
             </div>
             
             <div ng-show="nextArticle" class="col-six s-content__next">
-                <a href="#0" rel="next">
+                <a ng-href="#/post/{{ nextArticle.id }}/view" rel="next">
                     <span>Next Post</span>
                     {{ nextArticle.title }}
                 </a>

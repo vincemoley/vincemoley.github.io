@@ -136,8 +136,8 @@
 
         // open (or close) submenu items in mobile view menu. 
         // close all the other open submenu items.
-        $('.header__nav .has-children').children('a').on('click', function (e) {
-            e.preventDefault();
+        $('.header__nav a').on('click', function (e) {
+
 
             if ($(".close-mobile-menu").is(":visible") == true) {
 
@@ -153,6 +153,8 @@
                     .slideUp(200);
 
             }
+
+            $(".close-mobile-menu").click();
         });
     };
 

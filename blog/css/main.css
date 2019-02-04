@@ -1421,7 +1421,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .format-standard .display-1 {
   color: white;
-  -webkit-text-stroke: .3px black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: black;
 }
 
 .format-standard ul li {
@@ -1439,9 +1441,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width:1500px) {
   .format-standard .display-1 {
     font-size: 4.5rem;
-
-    margin-left: 180px;
-    margin-right: 180px;
   }
 }
 
@@ -1449,17 +1448,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width:1200px) {
   .format-standard .display-1 {
     font-size: 4.5rem;
-
-    margin-left: 180px;
-    margin-right: 180px;
   }
 }
 
 @media only screen and (max-width:1000px) {
   .format-standard .display-1 {
     font-size: 3.6rem;
-    margin-left: 186px;
-    margin-right: 217px;
   }
 
   .entry__header {
@@ -1469,10 +1463,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width:800px) {
-  .format-standard  .display-1 {
+  .format-standard .display-1 {
     font-size: 3rem;
-    margin-left: 147px;
-    margin-right: 177px;
   }
 
   .entry__header {
@@ -1486,8 +1478,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   .format-standard .entry__meta {
     margin: 0 0 0 4.5rem;
-    color: rgba(255, 255, 255, 0.5);
-    -webkit-text-stroke: .3px black;
+    color: white;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
     font-size: 1.4rem;
   }
 
@@ -1504,8 +1498,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width:700px) {
   .format-standard .display-1 {
     font-size: 2rem;
-    margin-left: 125px;
-    margin-right: 145px;
   }
 
   .format-standard .entry__info {
@@ -1527,9 +1519,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width:500px) {
   .format-standard .display-1 {
     font-size: 2rem;
-
-    margin-left: 86px;
-    margin-right: 106px;
+    margin-right: 10px;
   }
 
   .format-standard .lead.drop-cap:first-letter {
@@ -1556,9 +1546,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width:400px) {
   .format-standard .display-1 {
     font-size: 2rem;
-
-    margin-left: 88px;
-    margin-right: 87px;
   }
 
   .format-standard .lead.drop-cap:first-letter {
@@ -2748,7 +2735,10 @@ body.search-is-visible {
 }
 
 .entry__meta a {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: black;
 }
 
 .entry__meta a:focus,
@@ -3048,7 +3038,7 @@ body.search-is-visible {
 
 @media only screen and (max-width:800px) {
   .s-content--top-padding {
-    padding-top: 13.8rem;
+    padding-top: 9rem;
   }
 
   .entry__main {
@@ -3613,7 +3603,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 .entry__media img {
   vertical-align: bottom;
 
-  max-width: 50%;
+  width: 100%;
 }
 
 .entry__media, .entry__post-thumb {
