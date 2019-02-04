@@ -104,10 +104,7 @@ app.service('articles', function(){
             "So what's the takeaway?  A car wash does a poor job of quickly \"cleaning\" the exterior of your vehicle for cheap.  Ya get what ya pay for...  A mobile detail is an investment into one of your most valuable assets.  Though it seems more expensive, it's value far exceeds that of an automated wash by providing a human evaluation of your vehicle's current state, a thorough decontamination of the exterior, protective barriers and a lustrous, showroom quality shine that will turn heads.  So maybe Shakespeare was referring to a car wash when he wrote, \"All that glitters is not gold.\"",
         contentQuote: "A car wash does a poor job of quickly \"cleaning\" the exterior of your vehicle for cheap.  Ya get what ya pay for...",
         postImages: ["images/thumbs/post/soap_bucket.webp", "images/thumbs/post/car_wash.webp"],
-        links: [{
-            label: "",
-            url: ""
-        }]
+        links: []
     }
     ];
 
