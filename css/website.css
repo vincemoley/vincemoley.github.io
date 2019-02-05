@@ -581,7 +581,7 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 60vh;
+  top: 58vh;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1915,3 +1915,12 @@ input[disabled] {
   background-color: lightgray;
 }
 
+a.best-of-york {
+    position: absolute;
+    right: 14px;
+    top: 10vh;
+}
+
+.best-of-york img {
+  height: 100px;
+}
