@@ -9,9 +9,11 @@
                     <a ng-href="#/post/{{ article.id }}/view" title="{{ article.title }}">
                         <div class="entry">
                             <div class="entry__background" style="background-image:url({{ article.bgImage }});"></div>
-                        </div>
-                        <div class="entry__content">
-                            <h1 class="format-standard display-1">{{ article.title }}</h1>
+
+                            <div class="entry__content">
+                                <h1 class="format-standard display-1">{{ article.title }}</h1>
+                                <h1 class="format-standard display-1">{{ article.subtitle }}</h1>
+                            </div>
                         </div>
                     </a>
                 </div>

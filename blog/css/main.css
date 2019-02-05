@@ -1519,7 +1519,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width:500px) {
   .format-standard .display-1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 10px;
   }
 

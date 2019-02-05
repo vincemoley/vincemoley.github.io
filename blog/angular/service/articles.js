@@ -90,7 +90,8 @@ app.service('articles', function(){
         }]
     },
     {  id: 5,
-        title: "It's All In The Details - Part 1 - The Exterior",
+        title: "It's All In The Details",
+        subtitle: "Part 1 - The Exterior",
         whoPublished: "Vince Moley",
         whoImage: "images/avatars/user-01.webp",
         datePublished: "Feb. 4, 2019",
@@ -139,10 +140,10 @@ app.service('articles', function(){
     }
 
     this.featured = function(){
-    	return articles;
+    	return articles.slice().reverse();
     }
 
     this.popular = function(){
-        return articles;
+        return articles.slice().reverse();
     }
 });
