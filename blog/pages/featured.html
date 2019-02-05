@@ -6,29 +6,15 @@
             <div class="featured-slider featured" data-aos="zoom-in">
 
                 <div ng-repeat="article in articles" class="featured__slide">
-                    <div class="entry">
-
-                        <div class="entry__background" style="background-image:url({{ article.bgImage }});"></div>
-                        
-                        <div class="entry__content">
-                            <span class="entry__category"><a href="#0">-</a></span>
-
-                            <h1><a ng-href="#/post/{{ article.id }}/view" title="{{ article.title }}">{{ article.title }}</a></h1>
-
-                            <div class="entry__info">
-                                <a href="#0" class="entry__profile-pic">
-                                    <img class="avatar" ng-src="{{ article.whoImage }}" alt="{{ article.whoPublished }}">
-                                </a>
-                                <ul class="entry__meta">
-                                    <li><a href="#0">{{ article.whoPublished }}</a></li>
-                                    <li>{{ article.datePublished }}</li>
-                                </ul>
-                            </div>
+                    <a ng-href="#/post/{{ article.id }}/view" title="{{ article.title }}">
+                        <div class="entry">
+                            <div class="entry__background" style="background-image:url({{ article.bgImage }});"></div>
                         </div>
-                        
-                    </div>
+                        <div class="entry__content">
+                            <h1 class="format-standard display-1">{{ article.title }}</h1>
+                        </div>
+                    </a>
                 </div>
-                
             </div>
 
         </div>

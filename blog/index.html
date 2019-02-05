@@ -118,17 +118,18 @@
 
                 <div class="block-1-2 block-m-full popular__posts">
 
-                    <article ng-repeat="article in articles" class="col-block popular__post">
-                        <a ng-href="#/post/{{ article.id }}/view" class="popular__thumb">
-                            <img ng-src="{{ article.bgImage }}" alt="">
-                        </a>
-                        <h5>{{ article.title }}</h5>
-                        <section class="popular__meta">
-                            <span class="popular__author"><span>By</span> <a href="#0">{{ article.whoPublished }}</a></span>
-                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">{{ article.datePublished }}</time></span>
-                        </section>
-                    </article>
-
+                    <a ng-href="#/post/{{ article.id }}/view">
+                        <article ng-repeat="article in articles" class="col-block popular__post">
+                            <span class="popular__thumb">
+                                <img ng-src="{{ article.bgImage }}" alt="{{ article.title }}">
+                            </span>
+                            <h5>{{ article.title }}</h5>
+                            <section class="popular__meta">
+                                <span class="popular__author"><span>By</span> <a href="#0">{{ article.whoPublished }}</a></span>
+                                <span class="popular__date"><span>on</span> <time datetime="2018-06-14">{{ article.datePublished }}</time></span>
+                            </section>
+                        </article>
+                    </a>
                 </div>
             </div>
 
