@@ -2665,6 +2665,10 @@ body.search-is-visible {
   overflow: hidden;
 }
 
+.featured__slide .entry__background .webp {
+
+}
+
 .featured__slide .entry__content {
   display: table-cell;
   vertical-align: top;

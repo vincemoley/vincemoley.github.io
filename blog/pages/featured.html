@@ -8,7 +8,8 @@
                 <div ng-repeat="article in articles" class="featured__slide">
                     <a ng-href="#/post/{{ article.id }}/view" title="{{ article.title }}">
                         <div class="entry">
-                            <div class="entry__background" style="background-image:url({{ article.bgImage }});"></div>
+                            <div ng-show="article.bgImage.webp" class="entry__background" style="background-image:url({{ article.bgImage.path + '.webp' }});"></div>
+                            <div ng-show="article.bgImage.jpg" class="entry__background" style="background-image:url({{ article.bgImage.path + '.jpg' }});"></div>
 
                             <div class="entry__content">
                                 <h1 class="format-standard display-1">{{ article.title }}</h1>

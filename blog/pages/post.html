@@ -4,11 +4,11 @@
 
         <div class="entry__media col-full">
             <div class="entry__post-thumb">
-                <img ng-src="{{ article.bgImage }}" 
-                     ng-srcset="{{ article.bgImage }} 2000w, 
-                             {{ article.bgImage }} 1000w, 
-                             {{ article.bgImage }} 500w" 
-                     sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                <picture>
+                    <source ng-srcset="{{ article.bgImage.path }}.webp" type="image/webp">
+                    <source ng-srcset="{{ article.bgImage.path }}.jpg" type="image/jpeg">
+                    <img ng-src="{{ article.bgImage.path }}.jpg" ng-srcset="{{ article.bgImage.path }}.jpg 2000w, {{ article.bgImage.path }}.jpg 1000w, {{ article.bgImage.path }}.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                </picture>
             </div>
 
             <div class="entry__header col-full">
@@ -24,7 +24,11 @@
 			<p ng-bind-html="article.content_1"></p>
 
             <p>
-            <img ng-src="{{ article.postImages[0] }}" ng-srcset="{{ article.postImages[0] }} 2000w, {{ article.postImages[0] }} 1000w, {{ article.postImages[0] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                <picture>
+                    <source ng-srcset="{{ article.postImages[0].path }}.webp" type="image/webp">
+                    <source ng-srcset="{{ article.postImages[0].path }}.jpg" type="image/jpeg">
+                    <img ng-src="{{ article.postImages[0].path }}.jpg" ng-srcset="{{ article.postImages[0].path }}.jpg 2000w, {{ article.postImages[0].path }}.jpg 1000w, {{ article.postImages[0].path }}.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                </picture>
             </p>
 
             <p ng-bind-html="article.content_2"></p>
@@ -34,7 +38,11 @@
 			<p ng-bind-html="article.content_3"></p>
 
             <p>
-            <img ng-src="{{ article.postImages[1] }}" ng-srcset="{{ article.postImages[1] }} 2000w, {{ article.postImages[1] }} 1000w, {{ article.postImages[1] }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                <picture>
+                    <source ng-srcset="{{ article.postImages[1].path }}.webp" type="image/webp">
+                    <source ng-srcset="{{ article.postImages[1].path }}.jpg" type="image/jpeg">
+                    <img ng-src="{{ article.postImages[1].path }}.jpg" ng-srcset="{{ article.postImages[1].path }}.jpg 2000w, {{ article.postImages[1].path }}.jpg 1000w, {{ article.postImages[1].path }}.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                </picture>
             </p>
 
             <p ng-bind-html="article.content_4"></p>

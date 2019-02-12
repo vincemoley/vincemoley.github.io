@@ -121,7 +121,13 @@
                     <a ng-href="#/post/{{ article.id }}/view">
                         <article ng-repeat="article in articles" class="col-block popular__post">
                             <span class="popular__thumb">
-                                <img ng-src="{{ article.bgImage }}" alt="{{ article.title }}">
+                                <picture>
+                                    <source ng-srcset="{{ article.bgImage.path }}.webp" type="image/webp">
+                                    <source ng-srcset="{{ article.bgImage.path }}.jpg" type="image/jpeg">
+                                    <img ng-src="{{ article.bgImage.path }}.jpg" alt="{{ article.title }}">
+                                </picture>
+
+
                             </span>
                             <h5>{{ article.title }}</h5>
                             <section class="popular__meta">
