@@ -996,3 +996,11 @@ header {
             transform:scale(0);
   }
 }
+
+.play-store-image {
+    height: 144px;
+}
+
+.app-store-image {
+    height: 100px;
+}
