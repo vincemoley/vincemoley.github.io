@@ -1914,13 +1914,3 @@ input[type="email"] {
 input[disabled] {
   background-color: lightgray;
 }
-
-a.best-of-york {
-    position: absolute;
-    right: 14px;
-    top: 10vh;
-}
-
-.best-of-york img {
-  height: 100px;
-}
