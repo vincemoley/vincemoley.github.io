@@ -328,6 +328,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 /* -- default nav -- */
 
 @media only screen and (min-width: 768px) {
+    .col-md-8.col-md-offset-2 {
+        padding-top: 40px;
+    }
+
     .main-nav li {
         padding: 0px 15px;
     }
@@ -733,7 +737,9 @@ header {
 \*------------------------------------*/
 
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+
+}
 
 @media only screen and (max-width: 767px) {
   .section-header h2.title {
@@ -1022,4 +1028,8 @@ p {
 
 .percent {
     font-size: 30pt;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px;
 }
