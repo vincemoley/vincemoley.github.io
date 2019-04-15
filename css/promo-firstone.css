@@ -769,11 +769,11 @@ header {
 
 @media only screen and (max-width: 480px) {
     #home {
-        height: 114vh;
+        height: 124vh;
     }
 
     #home .home-wrapper {
-        top: 42%;
+        top: 358px;
     }
 
     .bg-img {
@@ -825,6 +825,17 @@ header {
   .blog-comments .media .media {
       margin:0px -15px;
   }
+
+    .app-store-image, .play-store-image {
+        width: 100%;
+        height: inherit !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #home {
+        height: 150vh;
+    }
 }
 
 
