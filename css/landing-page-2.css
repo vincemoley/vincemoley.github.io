@@ -581,14 +581,14 @@ header {
 }
 
 #home {
-    height: 45vh;
+    height: 60vh;
 }
 
 #home .home-wrapper {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 58%;
+    top: 56%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -767,11 +767,11 @@ header {
     }
 
     #home .home-wrapper {
-        top: 49%;
+        top: 50%;
     }
 
     .bg-img {
-        bottom: 10%;
+        bottom: 0;
     }
 
   #portfolio [class*='col-xs'] {
