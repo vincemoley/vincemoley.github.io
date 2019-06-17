@@ -23,7 +23,7 @@
 
 			<p ng-bind-html="article.content_1"></p>
 
-            <p>
+            <p ng-show="article.postImages[0]">
                 <picture>
                     <source ng-srcset="{{ article.postImages[0].path }}.webp" type="image/webp">
                     <source ng-srcset="{{ article.postImages[0].path }}.jpg" type="image/jpeg">
@@ -37,7 +37,7 @@
 
 			<p ng-bind-html="article.content_3"></p>
 
-            <p>
+            <p ng-show="article.postImages[1]">
                 <picture>
                     <source ng-srcset="{{ article.postImages[1].path }}.webp" type="image/webp">
                     <source ng-srcset="{{ article.postImages[1].path }}.jpg" type="image/jpeg">

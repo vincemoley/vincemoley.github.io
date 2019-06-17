@@ -177,6 +177,28 @@ app.service('articles', function(){
             }
         ],
         links: []
+    },
+    {  id: 6,
+        title: "Attention to detailers: Entrepreneur crafts app to ease car detailing",
+        subtitle: "",
+        whoPublished: "Melinda Rizzo",
+        datePublished: "June 17, 2019",
+        bgImage: {
+            path: "images/thumbs/featured/cpbj",
+            webp: true,
+            jpg: true,
+        },
+        lead: "A mobile app developed in York County puts automotive detailing services in the driver’s seat.\n\nThe brainchild of Vince Moley, York-based Kleancierge provides a “car detailing marketplace” for vehicle owners to find, order, arrange and pay for professional car care services — completed at home or at the office.",
+        content_1: "“We’re the Uber of car detailing,” said Moley, who has a background in software development.\n\nCustomers can order from the app’s menu of cleaning and automotive detailing services. Car detailing is the process of cleaning and restoring the interior and exterior finish of a vehicle to protect and maintain it.\n\nMoley said vehicle owners often struggle with car care services, or they put off regular care of their vehicles because they don’t have the time. But according to Cars.com, vehicle condition is among the top factors influencing car resale value.\n\n“They’ll get the car washed or have a process done that actually makes things worse” for a car’s finish, Moley said.\n\nHe said the average cost for a Kleancierge detailing appointment includes a car wash and ranges from about $150 to $175 for a four-door sedan.\n\n“Detailers define what their pricing is. They are allowed to set the price and customize it to different vehicles,” Moley said.",
+        content_2: "Those detailing “partners” are vetted by Moley, He encourages them to complete training and adhere to standards outlined by the International Detailing Association, a trade group based in Minnesota. He said those standards ensure consistency of service and are among the industry’s highest.\n\nKleancierge is constantly on the lookout for best-of-breed detailers that are looking to improve their business, Moley said.\n\nHis service is winning over converts.\n\n“It’s extremely convenient to have someone come to your home or office to clean your car. When we were turning over our sales fleet of cars at Penn Waste, we had to get all the vehicles detailed,” said Amanda Davidson, director of marketing for Penn Waste, which is based in Manchester Township.",
+        content_3: "She said Kleancierge handled cleaning and detailing for eight vehicles in Penn Waste’s sales fleet, including late-model Ford Escapes, a Chevrolet Silverado and Ford F150 trucks.\n\nKleancierge also takes care of Davidson’s personal vehicles: a 2013 Honda CR-V, a compact sport utility vehicle, and a 2017 Ford Explorer, a full-sized sport utility vehicle.\n\n“The logistics … would have been a nightmare. It was much more time effective to have the detailer come to us,” Davidson said.\n\nAnd she applauds Moley’s choice to remain in Central Pennsylvania.\n\n“He’s committed to cultivating the tech community locally and encouraging other young entrepreneurs and software engineers to stay in the area,” Davidson said.\n\nCarmine Pantano, owner of Frank’s Marble & Granite in Red Lion, is another regular customer. He uses Kleancierge for both his business and personal vehicles.\n\nHe schedules twice-yearly detailing services for his 2015 Dodge Durango Citadel, in spring and fall.\n\n“Typically I’ll put in three days and times and within a few hours I get a response from the detailer. It’s a lot faster than trying to schedule over a phone call. I’m busy. I can schedule it and I trust the people that are coming to my business to do the work,” Pantano said.",
+        content_4: "<h3>More territory, services</h3>\nMoley developed and launched the mobile app in 2018, and he has big plans for its future.\n\n“Kleancierge’s goal is to be available throughout the United States and Canada over the next six to eight years,” Moley said.\n\nKleancierge services are currently available in Harrisburg, Lancaster and York, as well as in Maryland, Washington, D.C., and Jacksonville and Orlando Florida.\n\nMoley also is considering adding services to the Kleancierge menu, such as window tinting and vinyl wraps.\n\nVinyl wrap is a technique that can complement or completely change a car’s appearance, according to the National Automotive Parts Association. Vinyl wraps can also be used to promote a business.\n\n<i>This story was originally written by Melinda Rizzo in the Central Penn Business Journal.</i>",
+        contentQuote: "We’re the Uber of car detailing",
+        postImages: [],
+        links: [{
+            label: "Attention to detailers: Entrepreneur crafts app to ease car detailing",
+            url: "https://www.cpbj.com/attention-detailers-entrepreneur-crafts-app-ease-car-detailing/"
+        }]
     }
     ];
 
