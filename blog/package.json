@@ -14,7 +14,7 @@
     "angular-sanitize": "^1.7.5",
     "font-awesome": "^4.7.0",
     "ionicons": "^4.4.8",
-    "jquery": ">=3.4.0",
+    "jquery": ">=3.5.0",
     "slick-carousel": "^1.8.1"
   }
 }
